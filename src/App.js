@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React On VCET 1
+          Learn React On VCET 3
         </a>
       </header>
     </div>
