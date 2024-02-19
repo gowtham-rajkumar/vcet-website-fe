@@ -7,6 +7,7 @@ function App() {
         <>
         <h2>LOGIN PAGE</h2>
         <p>VELALAR COLLEGE OF ENGINEERING AND TECHNOLOGY</p>
+        <p>thindal</p>
         </>
       </header>
     </div>
