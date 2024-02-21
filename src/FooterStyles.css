@@ -1,16 +1,16 @@
-.Footer-Container{
+.Footer-Container {
     height: 100%;
     width: 100%;
     background-color: #000;
     padding: 70px 0px;
 }
 
-.Footer-Section{
+.Footer-Section {
     background: #222;
     height: 500px;
 }
 
-.Footer-top{
+.Footer-top {
     padding: 50px 0px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-.mail-input input[type="email"]{
+.mail-input input[type="email"] {
     background-color: #222;
     color: #949494;
     padding: 2px;
@@ -29,29 +29,29 @@
     border-bottom: 2px solid #949494;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
-.emailbtn svg{
+.emailbtn svg {
     margin-left: 10px;
     height: 40px;
     width: 45px;
 }
 
-.mail-input p{
+.mail-input p {
     color: #949494;
     font-size: 17px;
 }
 
-.emailbtn{
+.emailbtn {
     background-color: #222;
     border: none;
     cursor: pointer;
-    vertical-align:middle ;
+    vertical-align: middle;
 }
 
-.detail-section{
+.detail-section {
     padding: 40px;
     display: flex;
     flex-direction: row;
@@ -61,127 +61,242 @@ input:focus{
     font-size: 15px;
 }
 
-.detail{
+.detail {
     width: 200px;
     text-align: justify;
 }
 
-.abt-p{
+.abt-p {
     font-size: 15px;
 }
 
-.socio-img svg{
+.socio-img svg {
     height: 35px;
     width: 25px;
     color: #fff;
     margin-right: 12px;
 }
 
-.socio-img svg:hover{
-    color: #ec5426;
+.socio-img svg:hover {
+    color: #ff3d00;
 }
 
 
-.latest_post{
+.latest_post {
     padding: 0px;
 }
 
-.latest_post li:first-child{
+.latest_post li:first-child {
     padding-top: 0
 }
 
-.latest_post li:last-child{
+.latest_post li:last-child {
     padding-bottom: 0;
     border-bottom: 0px;
 }
 
-.latest_post li{
+.latest_post li {
     border-bottom: 1px solid #585858;
     padding: 10px 0;
-    overflow: hidden;
+    list-style: none;
 }
 
-.latest_post li img{
+.latest_post li img {
     float: left;
     margin-right: 10px;
 }
 
 .latest_post_txt {
-  width: 200px;
+    width: 200px;
 }
 
-.latest_post li .latest_post_txt h4{
+.latest_post li .latest_post_txt h4 {
     margin: 0;
     line-height: 18px;
     font-size: 10px;
     text-transform: uppercase;
 }
 
-.latest_post li .latest_post_txt h4 a{
+.latest_post li .latest_post_txt h4 a {
     color: #efefef;
 }
 
-.latest_post li .latest_post_txt h4 a:hover{
+.latest_post li .latest_post_txt h4 a:hover {
     color: #ff3d00;
 }
 
-.latest_post li .latest_post_txt p{
+.latest_post li .latest_post_txt p {
     color: #ff3d00;
     font-size: 13px;
     font-style: italic;
     margin: 0;
 }
 
-.latest_tweet{
+.info-list {
     padding: 0px;
-    list-style-type: none; 
-    position: relative;
-    top: 0;
+    margin-left: 0px;
+    line-height: 28px;
 }
 
-.latest_tweet li{
-    width: 200px;
+.info-list li {
+    padding-left: 0px;
+    list-style-type: none;
+    ;
+}
+
+.info-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.info-list li a:hover {
+    color: #ff3d00;
+}
+
+.contact {
+    width: 230px;
+}
+
+.footer_contact {
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.footer_contact li {
+    color: #efefef;
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    padding-left: 28px;
     list-style: none;
-    line-height: 23px;
-}
-
-.latest_tweet li a{
-    color: #00aced;
-    display: block;
-}
-
-.latest_tweet li span{
-    font-size: 10px;
-    text-transform: uppercase;
-}
-  
-.latest_tweet li {
-    padding-left: 25px; 
     position: relative;
-    bottom: 24px;
+    bottom: 28px;
+    font-size: 15px;
 }
-  
 
-@media (max-width: 769px) {
-    .form-mail{
+.footer_contact svg {
+    height: 18px;
+    width: 18px;
+}
+
+@media (max-width: 768px) {
+
+    .Footer-Container {
+        height: 1300px;
+        width: 100%;
+    }
+
+    .Footer-Section {
+        height: 1300px;
+    }
+
+    .form-mail {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .Footer-top{
+    .Footer-top {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    .mail-input input[type="email"]{
+    .mail-input input[type="email"] {
         font-size: 22px;
         width: 150px;
     }
 
-    svg{
+    svg {
         height: 35px;
         width: 25px;
+    }
+
+    .detail-section {
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .detail {
+        width: 100%;
+    }
+
+    .about h3,
+    .post h3,
+    .others h3,
+    .contact h3 {
+        text-decoration: underline;
+    }
+
+    .about {
+        width: 50%;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    .about p {
+        text-align: justify;
+    }
+
+    .post {
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .latest_post li,
+    .latest_post {
+        border-bottom: none;
+    }
+
+    .others {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .detail-section {
+        padding-left: 100px;
+        padding-right: 80px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .Footer-Container {
+        height: 800px;
+    }
+
+    .Footer-Section {
+        height: 800px;
+    }
+
+    .detail {
+        width: 50%;
+    }
+
+    .about {
+        margin-left: 20px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .post {
+        margin-left: 20px;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .others {
+        margin-left: 20px;
+    }
+
+    .contact {
+        margin-left: 20px;
     }
 }
