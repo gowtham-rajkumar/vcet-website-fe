@@ -1,9 +1,9 @@
 import './App.css';
+import CourseSlider from './CourseSlider';
+
 function App() {
   return (
-    <div>
-    
-    </div>
+      <CourseSlider />
   );
 }
 
