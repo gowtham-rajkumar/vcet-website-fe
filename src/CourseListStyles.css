@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.top-container{
+    text-align: center;
+}
+.top-container h1{
+    font-size:  2.625rem;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.top-container p{
+    color: #c0b48b;
+    font-size: 1.3125rem;
+    margin-top: 0%;
+    margin-bottom: 20px;
+}
+.heading-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.single-div{
+    flex: 1;
+    flex-basis: 25%;
+    background: #f8f8f8;
+    border: 1px solid #ececec;
+    margin: 20px;
+    margin-top: 20px;
+    filter: drop-shadow(1px 1px 10px  rgb(198, 198, 198));
+}
+.img-container{
+    z-index: 0;
+}
+.img-container img{
+    width: 100%;
+    
+}
+.bottom-container{
+    color: #333;
+    margin: 0px 20px 25px;
+    position: relative;
+    z-index: -8;
+}
+.bottom-container > h2 {
+    margin: 0%;
+}
+.bottom-container > a,i {
+    text-decoration: none;
+    color: #ff3d00;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.bottom-container > a {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+.bottom-container > i{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.inner-img{
+    position: absolute;
+    bottom: 75%;
+    right: 0;
+    z-index: -10;
+}
+.inner-img > img{
+    width: 70px;
+    height: 80px;
+}
