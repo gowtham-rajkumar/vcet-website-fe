@@ -31,9 +31,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div id="mobile" onClick={handleClick}>
-        <i id="menu" className={isOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
-      </div>
+  <i id="menu" className={isOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
+</div>
     </nav>
   );
 };
 export default Navbar;
+

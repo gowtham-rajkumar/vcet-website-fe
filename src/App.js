@@ -1,11 +1,15 @@
 import './App.css';
-
+import CourseList from './CourseList';
+import HomeTop from './HomeTop';
 import Navbar from './Navbar';
+
 function App() {
   return (
-    <div className='container'>
-
-      <Navbar/>
+    <div>
+      <Navbar />
+      <HomeTop />
+      <CourseList />
+      
     </div>
   );
 }

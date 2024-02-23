@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 80px;
-    background-color: #222;
+    background-color:rgb(255, 255, 255);
 }
 .logo{
     width:80px;
@@ -20,7 +20,7 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 1.3rem;
-    color: rgb(255, 255, 255);    
+    color: rgb(0, 0, 0);    
 }
 #navItems li a::after{
     content:'';
@@ -44,7 +44,7 @@
 #mobile i{
     color: white;
 }
-@media screen and (max-width:769px) {
+@media screen and (max-width:900px) {
     #mobile{
         display: block; 
     }
@@ -61,11 +61,12 @@
         top: -300px;
         width: 100%;
         padding: 50px 0px;
-        background-color: #222;
+        background-color: #ffffff;
         left: 50%;
         right: 50%;
         transform: translate(-50%,-50%);
         transition: all 500ms;
+        z-index: 2;
         
     }
     #navItems li{
@@ -74,10 +75,11 @@
     }
     #mobile i{
         font-size: 40px;
+        color:#ff3d00;
         cursor: pointer;
     }
     #navItems.active{
-        top:280px
+        top:260px
     }
 }
 
