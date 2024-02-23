@@ -20,6 +20,7 @@ const Footer = () => {
         event.preventDefault();
         setEmail("");
     };
+    const year = new Date();
     return (
         <div className='Footer-Container'>
             <div className='Footer-Section'>
@@ -110,6 +111,20 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className='footer-bottom'>
+                <div className='footer-cr'>
+                    <p>&copy; {year.getFullYear()} VCET Campus. All rights reserved</p>
+                </div> 
+                <div className='footer-nav'>
+                    <ul>
+                        <li> <a href="#">HOME |</a></li>
+                        <li> <a href="#">ABOUT |</a></li>
+                        <li> <a href="#">COURSES |</a></li>
+                        <li> <a href="#">EVENTS |</a></li>
+                        <li> <a href="#">TERMS & CONDITIONS</a></li>
+                    </ul>
+                </div>               
             </div>
         </div>
     )
