@@ -6,6 +6,7 @@
     background-size: cover;
     /* background-position: fixed; */
     background-position: center;
+    background-attachment: fixed;
 }
 
 .heading{
@@ -29,6 +30,16 @@ a.rm_btn {
     text-decoration: none;
     color: white;
     font-weight: 500;
+}
+.left-container >p{
+    margin-top: 10px;
+}
+.left-container h2{
+    font-weight: 700;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.35);
 }
 .left-container{
     padding-left: 5rem;

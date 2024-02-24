@@ -10,7 +10,7 @@ const HomeTop = () =>{
             <p>Love exciting and new. Come aboard were expecting you. Love life's sweetest reward Let it flow it floats back to you. Texas tea. A man is born he's a man of means you knew.</p>
            <div className='button-div'>
             <a href="#" class="rm_btn">Learn more</a>
-            <a href="#" class="rm_btn">apply now</a>
+            {/* <a href="#" class="rm_btn">apply now</a> */}
             </div>
             </div>
             <div className="right-container">
