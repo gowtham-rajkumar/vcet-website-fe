@@ -16,7 +16,7 @@ function CourseList() {
     return (
         <section className="courseList">
             <div className="top-container">
-                <h1>Courses In Our Institution</h1>
+                <h1>Programmes In Our Institution</h1>
                 <p>Check our main courses and coachings</p>
             </div>
 
@@ -68,8 +68,7 @@ function CourseList() {
                     <div className="bottom-container">
                     <div className="inner-img"> <img src={imgThree} alt="" /></div>
                         <h2>Civil engineering</h2>
-                        <p>Plans, designs, and oversees construction of public infrastructure, from roads and bridges to buildings and airports.</p>
-                        <a href=".html">Dig Deeper</a>
+                        <p>Plans, designs, and oversees construction of public infrastructure, from roads and bridges to buildings and airports.Focuses on the design and analysis of structures like buildings, bridges, dams, and towers.</p>                   <a href=".html">Dig Deeper</a>
                         <i className="fa fa-angle-right"></i>
                     </div>
                 </div>
@@ -80,7 +79,7 @@ function CourseList() {
                     </div>
                     <div className="bottom-container">
                     <div className="inner-img"> <img src={imgFive} alt="" /></div>
-                        <h2>Computer science engineering</h2>
+                        <h2>Computer science and engineering</h2>
                         <p>Focuses on software development, computer systems design, and computer networks to drive innovation and technology.</p>
                         <a href=".html">Dig Deeper</a>
                         <i className="fa fa-angle-right"></i>

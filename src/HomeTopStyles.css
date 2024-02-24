@@ -4,7 +4,7 @@
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed;
+    /* background-position: fixed; */
     background-position: center;
 }
 
@@ -42,6 +42,7 @@ a.rm_btn {
 }
 .button-div{
     display: flex;
+    margin-top: 15px;
 }
 .left-right{
    display: grid;

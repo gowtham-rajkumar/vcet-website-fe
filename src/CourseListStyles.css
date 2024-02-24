@@ -11,7 +11,7 @@
     font-weight: 700;
     color: #333;
     margin-bottom: 0;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .top-container p{
     color: #c0b48b;
@@ -25,6 +25,7 @@
     justify-content: center;
 }
 .single-div{
+
     flex: 1;
     flex-basis: 25%;
     background: #f8f8f8;
@@ -48,6 +49,10 @@
 }
 .bottom-container > h2 {
     margin: 0%;
+    text-transform: capitalize;
+}
+.bottom-container > p{
+    margin-top: 10px;
 }
 .bottom-container > a,i {
     text-decoration: none;
