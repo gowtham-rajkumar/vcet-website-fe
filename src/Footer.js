@@ -1,8 +1,6 @@
 import React from 'react';
 import './FooterStyles.css';
-
 import { useState } from 'react';
-
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGoogle } from "react-icons/fa";
