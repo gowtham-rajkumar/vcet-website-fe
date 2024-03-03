@@ -98,8 +98,8 @@ const Contact = () => {
           </div>
         </div>
         <div class="form-div">
-          <div class="left-container">{/* <img src={clgImg} alt="" /> */}</div>
-          <div className="right-container">
+          <div class="left-containerr">{/* <img src={clgImg} alt="" /> */}</div>
+          <div className="right-containerr">
             <div className="form-container">
               <form
                 action="contact.html"
