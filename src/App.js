@@ -1,4 +1,3 @@
-
 import CourseList from "./CourseList";
 import HomeTop from "./HomeTop";
 import Navbar from "./Navbar";

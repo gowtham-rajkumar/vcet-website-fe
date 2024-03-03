@@ -90,10 +90,10 @@ i {
   height: 80px;
 }
 @media screen and (max-width: 500px) {
-    .single-div{
-        flex-basis: 50%;
-    }
-    .heading-container{
-        padding: 7px;
-    }
+  .single-div {
+    flex-basis: 50%;
+  }
+  .heading-container {
+    padding: 7px;
+  }
 }

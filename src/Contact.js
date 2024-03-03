@@ -1,4 +1,5 @@
 import "./ContactStyles.css";
+import clgImg from "./Images/contact-left-img.jpeg";
 // import Aos from "aos";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
