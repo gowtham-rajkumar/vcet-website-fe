@@ -37,12 +37,12 @@ const LatestCourseSlider = () => {
             slidesToSlide: 1
         },
         tablet: {
-            breakpoint: { max: 800, min: 464 },
+            breakpoint: { max: 800, min: 500 },
             items: 2,
             slidesToSlide: 1
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 500, min: 0 },
             items: 1
         }
     };
@@ -75,10 +75,10 @@ const LatestCourseSlider = () => {
                     autoPlay={!isDragging}
                     autoPlaySpeed={3000}
                     //keyBoardControl={true}
-                    customTransition="all .5"
-                    transitionDuration={500}
+                    customTransition="transform 300ms ease-in-out"
+                    transitionDuration={300}
                     containerClass="carousel-container"
-                    //removeArrowOnDeviceType={["tablet", "mobile"]}
+                    removeArrowOnDeviceType={["mobile"]}
                     //deviceType={this.props.deviceType}
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
