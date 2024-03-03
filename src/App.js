@@ -4,6 +4,11 @@ import Navbar from "./Navbar";
 import { Home } from "./pages/Home";
 import { Courses } from "./pages/Courses";
 
+
+import CourseList from './CourseList';
+import LatestCourseSlider from './LatestCourseSlider';
+import HomeTop from './HomeTop';
+import Footer from './Footer';
 function App() {
   return (
     <>
