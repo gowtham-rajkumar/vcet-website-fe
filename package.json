@@ -13,7 +13,10 @@
     "react-icons": "^5.0.1",
     "react-multi-carousel": "^2.8.4",
     "react-responsive-carousel": "^3.2.23",
+<<<<<<< HEAD
     "react-router-dom": "^6.22.2",
+=======
+>>>>>>> 9d598e0 (gokul complete about section)
     "react-scripts": "5.0.1",
     "react-swipeable": "^7.0.1",
     "web-vitals": "^2.1.4"
