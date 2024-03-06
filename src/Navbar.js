@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import './NavbarStyles.css';
-import Logo from './Images/logo.png';
+import React, { useState } from "react";
+import "./NavbarStyles.css";
+import { Link } from "react-router-dom";
+import Logo from "./Images/logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => {
@@ -10,31 +11,30 @@ const Navbar = () => {
     <nav className="navbar">
       <img src={Logo} alt="logo" className="logo" />
       <div>
-        <ul id="navItems" className={isOpen ?"#navItems active" :"navItems"}>
+        <ul id="navItems" className={isOpen ? "#navItems active" : "navItems"}>
           <li>
-            <a className="active" href="index.html">
+            <Link to="/" className="active">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="index.html">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="index.html">Courses</a>
+            <Link to="/courses">Courses</Link>
           </li>
           <li>
-            <a href="index.html">Events</a>
+            <Link to="/events">Events</Link>
           </li>
           <li>
-            <a href="index.html">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
       <div id="mobile" onClick={handleClick}>
-  <i id="menu" className={isOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
-</div>
+        <i id="menu" className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
+      </div>
     </nav>
   );
 };
 export default Navbar;
-
