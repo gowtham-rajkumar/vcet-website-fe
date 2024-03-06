@@ -21,7 +21,6 @@ function App() {
           <Route path="/Courses" Component={Courses} />
         </Routes>
         {/* </div> */}
-        
       </Router>
     </>
 
