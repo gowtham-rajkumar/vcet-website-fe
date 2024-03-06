@@ -1,8 +1,8 @@
 import "./ContactStyles.css";
 import clgImg from "./Images/contact-left-img.jpeg";
 // import Aos from "aos";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { BsPrinter } from "react-icons/bs";
