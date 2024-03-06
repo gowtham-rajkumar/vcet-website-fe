@@ -5,7 +5,7 @@
 
 .contact-sec {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url(./Images/ClgOutside.jpeg);
+    url(../Images/ClgOutside.jpeg);
   height: 60vh;
   background-position: 0;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 }
 
 .subNav-container {
-  background: url(./Images/navDeceration.png);
+  background: url(../Images/navDeceration.png);
   display: flex;
   background-color: #ff3d00;
   background-attachment: fixed;
@@ -103,7 +103,7 @@ i {
 }
 
 .map-loc-icon {
-  margin-left: -20px;
+  margin-left: -23px;
 }
 
 .small-div > svg {
@@ -119,7 +119,7 @@ i {
 }
 
 .left-containerr {
-  background: url(./Images/contact-left-img.jpeg);
+  background: url(../Images/contact-left-img.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -157,7 +157,6 @@ i {
   margin-top: 10px;
   border-radius: 6px;
   border: 1px solid gray;
-
 }
 
 .form-container input[type="text"]:focus,
@@ -201,8 +200,12 @@ span {
     gap: 10px;
   }
   .div-one {
-    margin-left: 20px;
+    margin-left: 25px;
   }
+  .map-loc-icon {
+    margin-left: -29px;
+  }
+
   .left-containerr {
     display: none;
   }
