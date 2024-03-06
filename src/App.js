@@ -20,6 +20,7 @@ function App() {
           <Route path="/contact" Component={Contact} />
           <Route path="/Courses" Component={Courses} />
         </Routes>
+        
         {/* </div> */}
       </Router>
     </>
