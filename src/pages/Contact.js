@@ -1,23 +1,16 @@
 import "./ContactStyles.css";
-import clgImg from "./Images/contact-left-img.jpeg";
-// import Aos from "aos";
-import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { BsPrinter } from "react-icons/bs";
 import { IoMailOutline } from "react-icons/io5";
-// import { useEffect } from "react";
 const Contact = () => {
-  //   useEffect(()=>{
-  //     Aos.init()
-  //   },[])
   function handlesubmit(event) {
     event.preventDefault();
   }
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <section className="contact-sec">
         <div className="contact-con">
           <div>
@@ -108,27 +101,27 @@ const Contact = () => {
               >
                 <div className="row">
                   <h2>Send Us An Email</h2>
-                  <div className="single-div">
+                  <div className="single-div-Contact">
                     <label>
                       Your Name <span>*</span>
                     </label>
                     <input type="text" />
                   </div>
-                  <div className="single-div">
+                  <div className="single-div-Contact">
                     <label>
                       Your E-Mail <span>*</span>
                     </label>
                     <input type="text" />
                   </div>
-                  <div className="single-div">
+                  <div className="single-div-Contact">
                     <label>Phone Number</label>
                     <input type="text" />
                   </div>
-                  <div className="single-div">
+                  <div className="single-div-Contact">
                     <label>Subject</label>
                     <input type="text" />
                   </div>
-                  <div className="single-div">
+                  <div className="single-div-Contact">
                     <label>Message</label>
                     <textarea name="" cols="30" rows="10"></textarea>
                     <input type="submit" value="Send Message" />
