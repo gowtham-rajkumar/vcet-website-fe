@@ -2,9 +2,9 @@ import React from "react";
 
 import "./AboutStyle.css";
 
-import Navbar from "./Navbar";
-import Whychoose from './Whychoose'
-import Footer from "./Footer";
+import Navbar from "../Navbar";
+import Whychoose from '../Whychoose'
+import Footer from "../Footer";
 
 import masterimg from './Images/masterimg.png'
 import bachelorimg from './Images/bachelorimg.png'
