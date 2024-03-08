@@ -8,7 +8,7 @@ import backgroundImage from "../Images/LatestCourses_bg_img.jpg";
 import Footer from '../Footer.js';
 
 
-export const Home = () => {
+ const Home = () => {
 
   const UG_CourseList = UG_CourseData.map(item => 
     <Course 
@@ -57,3 +57,4 @@ export const Home = () => {
     </>
   )
 }
+export default Home

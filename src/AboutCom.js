@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./AboutStyle.css";
+import "./AboutComStyle.css";
 
 import Whychoose from './Whychoose'
 import Footer from "./Footer";

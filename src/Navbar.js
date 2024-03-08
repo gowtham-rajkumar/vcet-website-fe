@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavbarStyles.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "./Images/logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,23 +11,27 @@ const Navbar = () => {
     <nav className="navbar">
       <img src={Logo} alt="logo" className="logo" />
       <div>
-        <ul id="navItems" className={isOpen ? "#navItems active" : "navItems"}>
+        <ul
+          id="navItems"
+          className={isOpen ? "#navItems active" : "navItems"}
+          onClick={handleClick}
+        >
           <li>
-            <Link to="/" className="active">
+            <NavLink to="/" activeClassName='active'>
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink to="/about" activeClassName ='active'>About</NavLink>
           </li>
           <li>
-            <Link to="/courses">Courses</Link>
+            <NavLink to="/courses" activeClassName='active'>Courses</NavLink>
           </li>
           <li>
-            <Link to="/events">Events</Link>
+            <NavLink to="/events" activeClassName='active'>Events</NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/contact" activeClassName='active'>Contact</NavLink>
           </li>
         </ul>
       </div>
