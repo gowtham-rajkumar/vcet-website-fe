@@ -2,9 +2,8 @@ import React from "react";
 
 import "./AboutStyle.css";
 
-import Navbar from "../Navbar";
-import Whychoose from '../Whychoose'
-import Footer from "../Footer";
+import Whychoose from './Whychoose'
+import Footer from "./Footer";
 
 import masterimg from './Images/masterimg.png'
 import bachelorimg from './Images/bachelorimg.png'
@@ -17,7 +16,6 @@ import test from './Images/test.png'
 const About = () => {
   return (
     <div>
-      <Navbar />
       <div className="aboutImage">
         <h1>About us</h1>
       </div>
