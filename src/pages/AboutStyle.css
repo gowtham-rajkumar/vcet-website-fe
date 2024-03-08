@@ -1,0 +1,282 @@
+h1{
+  color: black;
+}
+
+.aboutImage {
+  position: relative;
+  background: url(./Images/Aboutpic.jpg);
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  place-content: center;
+}
+
+.aboutImage h1 {
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+.subNav-containers {
+  background: url(./Images/bgimg-about.png);
+  background-attachment: fixed;
+  display: flex;
+  background-color: #ff3d00;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.headings > h2 {
+  font-size: 1.5rem;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+.contact-element > ul {
+  display: flex;
+  font-size: 1.1rem;
+  list-style: none;
+  gap: 10px;
+}
+
+.contact-element > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+i {
+  font-size: 1rem;
+  color: #f6f3f3;
+}
+
+.university-container{
+  width: 100%;
+  display: flex;
+}
+
+.welcome-uni{
+  width: 50%;
+  padding-top: 200px;
+  line-height: 25px;
+  color: grey;
+}
+
+.welcome-uni h1{
+  color: black;
+  margin-bottom: 20px;
+}
+
+.uni-text{
+  margin-left: 10%;
+  width: 80%;
+}
+
+.degree{
+  width: 50%;
+  background-color: rgb(255, 242, 225);
+}
+
+.degree-content{
+  margin-left: 65px;
+  width: 70%;
+}
+
+.deg {
+  display: flex;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 18px ;
+}
+
+.deg .img {
+  margin-right: 20px; 
+}
+
+.deg .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.deg .text h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+} 
+
+.deg .text p {
+  color: rgb(98, 97, 97);
+}
+
+.principle-container{
+  background-color: #f6f3f3;
+  padding: 90px 0px;
+}
+
+.principle-title{
+  text-align: center;
+}
+
+.principle-title h1{
+  font-size: 3rem;
+  margin-bottom: 18px;
+}
+
+.principle-title p{
+  font-size: 23px;
+  color: grey;
+  font-family: 'LatoMedium', sans-serif;;
+}
+
+.principle-image{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 75px;
+}
+
+.profit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 5px dashed rgb(195, 191, 191);
+  width: 300px;
+  height: 320px;
+  margin-right: 1rem;
+  margin-bottom: 20px;
+}
+
+.profit h3{
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.applycontainer {
+  background: url(./Images/bgimg-about.png);
+  background-attachment: fixed;
+  background-color: #ff3d00;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.applymain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.applytext {
+  flex: 1;
+}
+
+.applytext h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.applytext p {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.applybtn a {
+  border: 2px solid white;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.applybtn a:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width:1020px) {
+  .applymain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .applybtn{
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width:769px) {
+  .applymain{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:1052px) {
+  .university-container{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .welcome-uni{
+    text-align: center;
+    width: 100%;
+    padding-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  .degree{
+    width: 100%;
+  }
+
+  .degree-content{
+    width: 75%;
+  }
+
+  .deg{
+    margin-left: 50px;
+    margin-top: 50px;
+  }   
+}
+
+@media screen and (max-width:430px) {
+.deg{
+  margin-left: 0px;
+  text-align: center;
+}
+
+.degree-content{
+  margin: 40px;
+}
+
+.profit{
+  height:250px;
+  width: 250px;
+}
+
+.principle-title h1{
+  font-size: 35px;
+}
+
+.principle-title p{
+  font-size: 20px;
+}
+}
+
+
+
+ 
+
+
+
