@@ -1,12 +1,15 @@
 import React from 'react';
 import './LatestCourseSlider.css';
+
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useSwipeable } from 'react-swipeable';
 import { useState } from 'react';
 
-import { useSwipeable } from 'react-swipeable';
+import { responsive } from './Data';
 
-const LatestCourseSlider = () => {
+
+const LatestCourseSlider = ({CourseList, heading, description, backgroundImage}) => {
 
     const [isDragging, setIsDragging] = useState(false);
 
@@ -24,38 +27,24 @@ const LatestCourseSlider = () => {
       });
 
 
-    const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 1024 },
-            items: 3,
-            slidesToSlide: 1
-        },
-        desktop: {
-            breakpoint: { max: 1024, min: 800 },
-            items: 3,
-            slidesToSlide: 1
-        },
-        tablet: {
-            breakpoint: { max: 800, min: 500 },
-            items: 2,
-            slidesToSlide: 1
-        },
-        mobile: {
-            breakpoint: { max: 500, min: 0 },
-            items: 1
-        }
-    };
+    // const UG_List = UG_Data.map(item => 
+    //     <Course 
+    //         img = {item.img}
+    //         program = {item.program}
+    //         dept = {item.dept}
+    //         description = {item.description}
+    //     />
+    //     );
 
     return (
             <>
-            <section className='Latest-Courses-Area'>
+            <section className='Latest-Courses-Area' style={{ backgroundImage: `url(${backgroundImage})` }}>
 
             <div className='LatestCourseContainer'>
 
             <div className='LatestCourseTitleBox'>
-                <h1>UG Programmes</h1>
-                <p>Empower your trajectory with our renowned UG programmes</p>
+                <h1>{heading}</h1>
+                <p>{description}</p>
             </div>
             <div className='LatestCourseContainer'>
             <div
@@ -75,15 +64,16 @@ const LatestCourseSlider = () => {
                     autoPlay={!isDragging}
                     autoPlaySpeed={3000}
                     //keyBoardControl={true}
-                    customTransition="transform 300ms ease-in-out"
-                    transitionDuration={300}
+                    customTransition="transform 500ms ease-in-out"
+                    transitionDuration={500}
                     containerClass="carousel-container"
                     removeArrowOnDeviceType={["mobile"]}
                     //deviceType={this.props.deviceType}
                     dotListClass="custom-dot-list-style"
                     itemClass="carousel-item-padding-40-px"
                 >
-                    <div className='LatestCourseCard'>
+                    {CourseList}
+                    {/* <div className='LatestCourseCard'>
                         <div className='LatestCourse-image'>
                             <img
                                 src="https://source.unsplash.com/random/500x250/?animal?1"
@@ -201,7 +191,7 @@ const LatestCourseSlider = () => {
                         <h3>B.Tech - <span>IT</span></h3>
                         <p className='LatestCourseName'>Empowering the digital era with cutting-edge IT solutions and innovations.</p>
                         <p className='LastestCourseDig'><a href="https://www.w3school.com">DIG DEEPER <i className="fa fa-angle-right"></i></a></p>
-                    </div>
+                    </div> */}
 
                 </Carousel>
             </div>
