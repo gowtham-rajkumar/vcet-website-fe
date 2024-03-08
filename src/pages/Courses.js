@@ -1,7 +1,8 @@
 import React from 'react'
 import CourseList from '../CourseList.js'
-export const Courses = () => {
+ const Courses = () => {
   return (
     <CourseList />
   )
 }
+export default Courses
