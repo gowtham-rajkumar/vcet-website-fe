@@ -1,16 +1,17 @@
 import './CourseListStyles.css'
-import courseOne from './Images/course one.png'
-import courseTwo from './Images/course two.png'
-import courseThree from './Images/course three.png'
-import courseFour from './Images/course four.png'
-import courseFive from './Images/course five.png'
-import courseSix from './Images/course six.png'
-import imgOne from './Images/icon_course_1.png'
-import imgTwo from './Images/icon_course_2.png'
-import imgThree from './Images/icon_course_3.png'
-import imgFour from './Images/icon_course_4.png'
-import imgFive from './Images/icon_course_5.png'
-import imgSix from './Images/icon_course_6.png'
+import {CourseListData} from './Data.js'
+// import courseOne from './Images/course one.png'
+// import courseTwo from './Images/course two.png'
+// import courseThree from './Images/course three.png'
+// import courseFour from './Images/course four.png'
+// import courseFive from './Images/course five.png'
+// import courseSix from './Images/course six.png'
+// import imgOne from './Images/icon_course_1.png'
+// import imgTwo from './Images/icon_course_2.png'
+// import imgThree from './Images/icon_course_3.png'
+// import imgFour from './Images/icon_course_4.png'
+// import imgFive from './Images/icon_course_5.png'
+// import imgSix from './Images/icon_course_6.png'
 
 function CourseList() {
     return (
@@ -19,23 +20,26 @@ function CourseList() {
                 <h1>Programmes In Our Institution</h1>
                 <p>Check our main courses and coachings</p>
             </div>
-
+      
             <div className="heading-container">
-                <div className="single-div">
-                    <div className="img-container">
-                        <img src={courseOne} alt="" />
-                    </div>
-                    <div className="bottom-container">
-                        <div className="inner-img"> <img src={imgOne} alt="" /></div>
-                       
-                        <h2>Artificial intelligence and data Science</h2>
-                        <p>Utilizes Quartz for predictive analysis, data mining, machine learning, and decision-making processes in diverse fields like finance and healthcare.</p>
-                        <a href=".html">Dig Deeper</a>
-                        <i className="fa fa-angle-right"></i>
-                    </div>
+                {CourseListData.map(item=>
+                <div className="single-div" key={item.id}>
+                <div className="img-container">
+                    <img src={item.image} alt="" />
                 </div>
+                <div className="bottom-container">
+                    <div className="inner-img"> <img src={item.icon} alt="" /></div>
+                   
+                    <h2>{item.title}</h2>
+                    <p>{item.description}</p>
+                    <a href="https://www.instagram.com/">Dig Deeper</a>
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+                    )}
+                
 
-                <div className="single-div">
+                {/* <div className="single-div">
                     <div className="img-container">
                         <img src={courseTwo} alt="" />
                     </div>
@@ -134,7 +138,7 @@ function CourseList() {
                         <a href=".html">Dig Deeper</a>
                         <i className="fa fa-angle-right"></i>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
 

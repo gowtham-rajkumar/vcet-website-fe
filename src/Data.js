@@ -196,3 +196,72 @@ export const PG_CourseData = [
     }
 
 ];
+
+// ........................@Boobalanselvarj (courseList Data )..........................//
+
+export const CourseListData = [
+    {
+        id: 1,
+        image: require("./Images/course one.png"),
+        icon: require("./Images/icon_course_1.png"),
+        title: "Artificial intelligence and data Science",
+        description: "Utilizes Quartz for predictive analysis, data mining, machine learning, and decision-making processes in diverse fields like finance and healthcare."
+      },
+      {
+          id: 2,
+          image: require("./Images/course two.png"),
+          icon: require("./Images/icon_course_2.png"),
+          title: "Artificial intelligence and machine learning",
+          description: "Develops algorithms to enable machines to learn from data, adapt, and make decisions autonomously."
+      },
+      {
+          id: 3,
+          image: require("./Images/course four.png"),
+          icon: require("./Images/icon_course_4.png"),
+          title: "Biomedical engineering",
+          description: "Applies engineering principles to healthcare, designing devices, systems, and therapies for diagnosing and treating diseases."
+      },
+      {
+          id: 4,
+          image: require("./Images/course three.png"),
+          icon: require("./Images/icon_course_1.png"),
+          title: "Civil engineering",
+          description: "Plans, designs, and oversees construction of public infrastructure, from roads and bridges to buildings and airports.Focuses on the design and analysis of structures like buildings, bridges, dams, and towers."
+      },
+      {
+          id: 5,
+          image: require("./Images/course five.png"),
+          icon: require("./Images/icon_course_5.png"),
+          title: "Computer science and engineering",
+          description: "Focuses on software development, computer systems design, and computer networks to drive innovation and technology."
+      },
+      {
+          id: 6,
+          image: require("./Images/course six.png"),
+          icon: require("./Images/icon_course_6.png"),
+          title: "Electronics and communication engineering",
+          description: "Designs, develops, and manages electronic systems for data communication, telecommunications, and information processing."
+      },
+      {
+          id: 7,
+          image: require("./Images/course three.png"),
+          icon: require("./Images/icon_course_1.png"),
+          title: "Electronics and electrical engineering",
+          description: "Creates and maintains electrical systems for power generation, distribution, and control in various industries."
+      },
+      {
+          id: 8,
+          image: require("./Images/course one.png"),
+          icon: require("./Images/icon_course_3.png"),
+          title: "Information technology",
+          description: "Manages, implements, and supports technology solutions to improve efficiency, productivity, and decision-making in organizations."
+      },
+      {
+          id: 9,
+          image: require("./Images/course five.png"),
+          icon: require("./Images/icon_course_5.png"),
+          title: "Mechanical engineering",
+          description: "Develops and designs mechanical systems and devices, from engines to manufacturing tools, to solve engineering challenges."
+      }
+  ];
+  

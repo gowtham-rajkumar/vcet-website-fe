@@ -26,7 +26,7 @@ const Contact = () => {
           <div className="contact-elements">
             <ul>
               <li>
-                <NavLink to="/" activeClassName="active">
+                <NavLink to="/" activeclassname="active">
                   Home
                 </NavLink>
               </li>
