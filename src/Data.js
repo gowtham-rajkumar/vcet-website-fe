@@ -3,6 +3,30 @@ export const responsive = {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 1024 },
         items: 3,
+        slidesToSlide: 1 //Default value is 1
+    },
+    desktop: {
+        breakpoint: { max: 1024, min: 800 },
+        items: 3,
+        slidesToSlide: 1
+    },
+    tablet: {
+        breakpoint: { max: 800, min: 500 },
+        items: 2,
+        slidesToSlide: 1
+    },
+    mobile: {
+        breakpoint: { max: 500, min: 0 },
+        items: 1,
+        slidesToSlide: 1
+    }
+};
+
+export const MouResponsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 1024 },
+        items: 4,
         slidesToSlide: 1
     },
     desktop: {
@@ -17,7 +41,8 @@ export const responsive = {
     },
     mobile: {
         breakpoint: { max: 500, min: 0 },
-        items: 1
+        items: 1,
+        slidesToSlide: 1
     }
 };
 
@@ -196,6 +221,58 @@ export const PG_CourseData = [
     }
 
 ];
+
+export const Mou_Data = [
+    {
+        id: 1,
+        img: "https://source.unsplash.com/random/500x250/?animal?1"
+    },
+
+    {
+        id: 2,
+        img: "https://source.unsplash.com/random/500x250/?animal?2"
+    },
+
+    {
+        id: 3,
+        img: "https://source.unsplash.com/random/500x250/?animal?3"
+    },
+
+    {
+        id: 4,
+        img: "https://source.unsplash.com/random/500x250/?animal?4"
+    },
+
+    {
+        id: 5,
+        img: "https://source.unsplash.com/random/500x250/?animal?5"
+    },
+
+    {
+        id: 6,
+        img: "https://source.unsplash.com/random/500x250/?animal?6"
+    },
+
+    {
+        id: 7,
+        img: "https://source.unsplash.com/random/500x250/?animal?7"
+    },
+
+    {
+        id: 8,
+        img: "https://source.unsplash.com/random/500x250/?animal?8"
+    },
+
+    {
+        id: 9,
+        img: "https://source.unsplash.com/random/500x250/?animal?9"
+    },
+
+    {
+        id: 10,
+        img: "https://source.unsplash.com/random/500x250/?animal?10"
+    }
+]
 
 // ........................@Boobalanselvarj (courseList Data )..........................//
 
