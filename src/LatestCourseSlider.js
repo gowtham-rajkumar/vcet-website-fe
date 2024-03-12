@@ -11,8 +11,8 @@ const LatestCourseSlider = ({
   heading,
   description,
   backgroundImage,
-  responsive
-}) => {
+  responsive,
+  removeArrow}) => {
   const [isDragging, setIsDragging] = useState(false);
 
   const handleDragEnd = () => {
@@ -41,55 +41,52 @@ const LatestCourseSlider = ({
   //     />
   //     );
 
-  return (
-    <>
-      <section
-        className="Latest-Courses-Area"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
-        <div className="LatestCourseContainer">
-          <div className="LatestCourseTitleBox">
-            <h1>{heading}</h1>
-            <p>{description}</p>
-          </div>
-          <div className="LatestCourseContainer">
-            <div
-              className="LatestCourseSliderBox"
-              id={isDragging ? "LatestCourseDragging" : ""}
-              onMouseDown={handleDragStart}
-              onMouseUp={handleDragEnd}
-              {...handlers}
-            >
-              <Carousel
-                swipeable={true}
-                draggable={true}
-                showDots={false}
-                responsive={responsive}
-                //ssr={true} // means to render carousel on server-side.
-                infinite={true}
-                autoPlay={!isDragging}
-                autoPlaySpeed={3000}
-                //keyBoardControl={true}
-                customTransition="transform 500ms ease-in-out"
-                transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["mobile"]}
-                //deviceType={this.props.deviceType}
-                dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
-              >
-                {CourseList}
-                {/* <div className='LatestCourseCard'>
-                        <div className='LatestCourse-image'>
-                            <img
-                                src="https://source.unsplash.com/random/500x250/?animal?1"
-                                alt="" 
-                            />
-                        </div>
-                        <h3>B.E - <span>BME</span></h3>
-                        <p className='LatestCourseName'>Innovating health solutions for tomorrow's medical advancements.</p>
-                        <p className='LastestCourseDig'><a href="https://www.w3school.com">DIG DEEPER <i className="fa fa-angle-right"></i></a></p>
+    return (
+            <>
+            <section className='Latest-Courses-Area' style={{ backgroundImage: `url(${backgroundImage})` }}>
+                <div className='LatestCourseContainer'>
+                    <div className='LatestCourseTitleBox'>
+                        <h1>{heading}</h1>
+                        <p>{description}</p>
                     </div>
+                    <div className='SliderContainer'>
+                        <div
+                            className="LatestCourseSliderBox"
+                            id={isDragging ? 'LatestCourseDragging' : ''}
+                            onMouseDown={handleDragStart}
+                            onMouseUp={handleDragEnd}
+                            {...handlers}
+                        >
+                            <Carousel
+                                swipeable={true}
+                                draggable={true}
+                                showDots={false}
+                                responsive={responsive}
+                                //ssr={true} // means to render carousel on server-side.
+                                infinite={true}
+                                autoPlay={!isDragging}
+                                autoPlaySpeed={3000}
+                                //keyBoardControl={true}
+                                customTransition="transform 500ms ease-in-out"
+                                transitionDuration={500}
+                                containerClass="carousel-container"
+                                removeArrowOnDeviceType={removeArrow}
+                                //deviceType={this.props.deviceType}
+                                dotListClass="custom-dot-list-style"
+                                itemClass="carousel-item-padding-40-px"
+                            >
+                                {CourseList}
+                                {/* <div className='LatestCourseCard'>
+                                    <div className='LatestCourse-image'>
+                                        <img
+                                            src="https://source.unsplash.com/random/500x250/?animal?1"
+                                            alt="" 
+                                        />
+                                    </div>
+                                    <h3>B.E - <span>BME</span></h3>
+                                    <p className='LatestCourseName'>Innovating health solutions for tomorrow's medical advancements.</p>
+                                    <p className='LastestCourseDig'><a href="https://www.w3school.com">DIG DEEPER <i className="fa fa-angle-right"></i></a></p>
+                                </div>
 
                                 <div className='LatestCourseCard'>
                                     <div className='LatestCourse-image'>

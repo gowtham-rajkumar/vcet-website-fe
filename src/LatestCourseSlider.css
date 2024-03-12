@@ -195,6 +195,7 @@
   margin: auto 1rem;
   overflow: hidden;
   border: 1px solid #cccccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   user-select: none;
 }
 
