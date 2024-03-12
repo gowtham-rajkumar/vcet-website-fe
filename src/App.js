@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import  Home  from "./pages/Home";
 import  Courses  from "./pages/Courses";
 import About from './AboutCom';
+import Events from "./pages/Events.js";
 
 
 function App() {
@@ -14,9 +15,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" Component={Home} />
-          <Route path="/contact" Component={Contact} />
+          <Route path="/Contact" Component={Contact} />
           <Route path="/Courses" Component={Courses} />
           <Route path="/About" Component={About} />
+          <Route path="/Events" Component={Events} />
         </Routes>
 
         {/* </div> */}

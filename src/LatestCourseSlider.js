@@ -1,87 +1,95 @@
-import React from 'react';
-import './LatestCourseSlider.css';
+import React from "react";
+import "./LatestCourseSlider.css";
 
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import { useSwipeable } from 'react-swipeable';
-import { useState } from 'react';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { useSwipeable } from "react-swipeable";
+import { useState } from "react";
 
-// import { responsive } from './Data';
+const LatestCourseSlider = ({
+  CourseList,
+  heading,
+  description,
+  backgroundImage,
+  responsive
+}) => {
+  const [isDragging, setIsDragging] = useState(false);
 
+  const handleDragEnd = () => {
+    setIsDragging(false);
+  };
 
-const LatestCourseSlider = ({CourseList, heading, description, backgroundImage, responsive}) => {
+  const handleDragStart = () => {
+    setIsDragging(true);
+  };
 
-    const [isDragging, setIsDragging] = useState(false);
+  const handlers = useSwipeable({
+    onSwiping: () => {
+      setIsDragging(true);
+    },
+    onSwiped: () => {
+      setIsDragging(false);
+    },
+  });
+//console.log(FeedbackResponsive)
+  // const UG_List = UG_Data.map(item =>
+  //     <Course
+  //         img = {item.img}
+  //         program = {item.program}
+  //         dept = {item.dept}
+  //         description = {item.description}
+  //     />
+  //     );
 
-    const handleDragEnd = () => {
-        setIsDragging(false);
-    };
-
-    const handleDragStart = () => {
-        setIsDragging(true);
-    };
-
-    const handlers = useSwipeable({
-        onSwiping: () => {setIsDragging(true)},
-        onSwiped: () => {setIsDragging(false)}
-      });
-
-
-    // const UG_List = UG_Data.map(item => 
-    //     <Course 
-    //         img = {item.img}
-    //         program = {item.program}
-    //         dept = {item.dept}
-    //         description = {item.description}
-    //     />
-    //     );
-
-    return (
-            <>
-            <section className='Latest-Courses-Area' style={{ backgroundImage: `url(${backgroundImage})` }}>
-                <div className='LatestCourseContainer'>
-                    <div className='LatestCourseTitleBox'>
-                        <h1>{heading}</h1>
-                        <p>{description}</p>
+  return (
+    <>
+      <section
+        className="Latest-Courses-Area"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
+        <div className="LatestCourseContainer">
+          <div className="LatestCourseTitleBox">
+            <h1>{heading}</h1>
+            <p>{description}</p>
+          </div>
+          <div className="LatestCourseContainer">
+            <div
+              className="LatestCourseSliderBox"
+              id={isDragging ? "LatestCourseDragging" : ""}
+              onMouseDown={handleDragStart}
+              onMouseUp={handleDragEnd}
+              {...handlers}
+            >
+              <Carousel
+                swipeable={true}
+                draggable={true}
+                showDots={false}
+                responsive={responsive}
+                //ssr={true} // means to render carousel on server-side.
+                infinite={true}
+                autoPlay={!isDragging}
+                autoPlaySpeed={3000}
+                //keyBoardControl={true}
+                customTransition="transform 500ms ease-in-out"
+                transitionDuration={500}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["mobile"]}
+                //deviceType={this.props.deviceType}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px"
+              >
+                {CourseList}
+                {/* <div className='LatestCourseCard'>
+                        <div className='LatestCourse-image'>
+                            <img
+                                src="https://source.unsplash.com/random/500x250/?animal?1"
+                                alt="" 
+                            />
+                        </div>
+                        <h3>B.E - <span>BME</span></h3>
+                        <p className='LatestCourseName'>Innovating health solutions for tomorrow's medical advancements.</p>
+                        <p className='LastestCourseDig'><a href="https://www.w3school.com">DIG DEEPER <i className="fa fa-angle-right"></i></a></p>
                     </div>
-                    <div className='SliderContainer'>
-                        <div
-                            className="LatestCourseSliderBox"
-                            id={isDragging ? 'LatestCourseDragging' : ''}
-                            onMouseDown={handleDragStart}
-                            onMouseUp={handleDragEnd}
-                            {...handlers}
-                        >
-                            <Carousel
-                                swipeable={true}
-                                draggable={true}
-                                showDots={false}
-                                responsive={responsive}
-                                //ssr={true} // means to render carousel on server-side.
-                                infinite={true}
-                                autoPlay={!isDragging}
-                                autoPlaySpeed={3000}
-                                //keyBoardControl={true}
-                                customTransition="transform 500ms ease-in-out"
-                                transitionDuration={500}
-                                containerClass="carousel-container"
-                                // removeArrowOnDeviceType={["mobile"]}
-                                //deviceType={this.props.deviceType}
-                                dotListClass="custom-dot-list-style"
-                                itemClass="carousel-item-padding-40-px"
-                            >
-                                {CourseList}
-                                {/* <div className='LatestCourseCard'>
-                                    <div className='LatestCourse-image'>
-                                        <img
-                                            src="https://source.unsplash.com/random/500x250/?animal?1"
-                                            alt="" 
-                                        />
-                                    </div>
-                                    <h3>B.E - <span>BME</span></h3>
-                                    <p className='LatestCourseName'>Innovating health solutions for tomorrow's medical advancements.</p>
-                                    <p className='LastestCourseDig'><a href="https://www.w3school.com">DIG DEEPER <i className="fa fa-angle-right"></i></a></p>
-                                </div>
 
                                 <div className='LatestCourseCard'>
                                     <div className='LatestCourse-image'>
@@ -191,7 +199,7 @@ const LatestCourseSlider = ({CourseList, heading, description, backgroundImage, 
                                     <p className='LastestCourseDig'><a href="https://www.w3school.com">DIG DEEPER <i className="fa fa-angle-right"></i></a></p>
                                 </div> */}
 
-                            </Carousel>
+                           </Carousel>
                         </div>
                     </div>
                 </div>  
