@@ -359,6 +359,7 @@ export const imgGalleryData = [
 
 // ........................@Boobalanselvarj (courseList Data )..........................
 
+// Data for "CourseList.js"
 export const CourseListData = [
   {
     id: 1,
@@ -433,9 +434,9 @@ export const CourseListData = [
       "Develops and designs mechanical systems and devices, from engines to manufacturing tools, to solve engineering challenges.",
   },
 ];
+//Responsive Data for " Slider (StudentFeedback.js) "
 export const FeedbackResponsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 1024 },
     items: 1,
     slidesToSlide: 1,
@@ -456,8 +457,8 @@ export const FeedbackResponsive = {
     slidesToSlide: 1,
   },
 };
-
-export const StudentSay = [
+// Data for "StudentFeedback.js"
+export const FeedbackData = [
   {
     id: 1,
     image: require("./Images/boobalan.jpg"),
@@ -483,6 +484,7 @@ export const StudentSay = [
     position: "Business Management",
   },
 ];
+// Data for "StudentFeedback.js (Heading) "
 export const FeedbackHeadingBox = {
   heading: "What Our Students Say",
   description: "Testimonials from students",
