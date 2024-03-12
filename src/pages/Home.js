@@ -2,13 +2,13 @@ import React from 'react';
 import HomeTop from '../HomeTop.js';
 import LatestCourseSlider from '../LatestCourseSlider.js';
 import CourseList from '../CourseList.js';
-import { UG_CourseData, UG_CourseHeadingBox, PG_CourseData, PG_CourseHeadingBox, Mou_Data} from '../Data.js';
+import { UG_CourseData, UG_CourseHeadingBox, PG_CourseData, PG_CourseHeadingBox,FeedbackHeadingBox, Mou_Data,StudentSay } from '../Data.js';
 import Course from '../Course.js';
 import backgroundImage from "../Images/LatestCourses_bg_img.jpg";
+import StudentFeedback from '../StudentFeedack.js';
 import Footer from '../Footer.js';
-
-import { responsive, MouResponsive } from '../Data';
 import Mou from '../Mou.js';
+import { FeedbackResponsive,responsive,MouResponsive } from '../Data.js';
 
 
  const Home = () => {
@@ -34,6 +34,16 @@ import Mou from '../Mou.js';
           key = {item.id}
       />
       );
+      const FeedbackList = StudentSay.map(item =>
+        <StudentFeedback 
+        image={item.image}
+        description={item.description}
+        name={item.studentName}
+        position={item.position}  
+        key={item.id}   
+  
+        />
+      )
 
     //Mou_List
     const Mou_List = Mou_Data.map(item =>
@@ -41,7 +51,7 @@ import Mou from '../Mou.js';
         img = {item.img}
         key = {item.id}
       />
-    );
+      );
 
   return (
     <>
@@ -52,7 +62,7 @@ import Mou from '../Mou.js';
         CourseList = {UG_CourseList}
         heading = {UG_CourseHeadingBox.heading}
         description = {UG_CourseHeadingBox.description}
-        backgroundImage = {backgroundImage}
+        backgroundImage={backgroundImage}
         responsive = {responsive}
       />
 
@@ -60,7 +70,7 @@ import Mou from '../Mou.js';
         CourseList = {PG_CourseList}
         heading = {PG_CourseHeadingBox.heading}
         description = {PG_CourseHeadingBox.description}
-        backgroundImage = {backgroundImage}
+        backgroundImage={backgroundImage}
         responsive = {responsive}
       />
 
@@ -73,6 +83,13 @@ import Mou from '../Mou.js';
         // backgroundImage = {backgroundImage}
         responsive = {MouResponsive}
       />
+
+      <LatestCourseSlider 
+       CourseList={FeedbackList} 
+       heading={FeedbackHeadingBox.heading}
+       description={FeedbackHeadingBox.description}
+       responsive={FeedbackResponsive} 
+       />
 
       <Footer />
     </div>

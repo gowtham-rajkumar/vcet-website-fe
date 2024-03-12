@@ -1,0 +1,56 @@
+.grabbing-class {
+  cursor: grab;
+}
+
+#grabed {
+  cursor: grabbing;
+}
+
+.stdTopContainer {
+  height: 50%;
+}
+.stdBottomContainer {
+  height: 50%;
+}
+.stdImg {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.stdImg > img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 8px solid #6666;
+}
+/* .stdIcon {
+  position: absolute;
+  bottom: 0%;
+  right: 47%;
+} */
+
+.std-para {
+  margin-top: 35px;
+}
+.std-para > p {
+  text-align: center;
+  margin: 10px 50px;
+  color: #666;
+  cursor: text;
+}
+.std-para > h3 {
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: text;
+}
+.std-para > h3 > span {
+  margin-right: 5px;
+}
+@media screen and (max-width: 500px) {
+  .std-para > p {
+    text-align: center;
+    margin: 10px 30px;
+    color: #666;
+  }
+}
