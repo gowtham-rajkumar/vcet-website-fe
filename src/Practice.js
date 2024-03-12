@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import {FeedbackResponsive as res } from "./Data.js";
 import { useState } from "react";
-import { StudentSay } from "./Data.js";
+import { FeedbackData } from "./Data.js";
 const Practice = () => {
   const [isGrab, setisGrab] = useState(false);
 
@@ -40,7 +40,7 @@ const Practice = () => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          {StudentSay.map((data) => (
+          {FeedbackData.map((data) => (
             <div className="std-Container">
               <div className="stdTopContainer">
                 <div className="stdImg">

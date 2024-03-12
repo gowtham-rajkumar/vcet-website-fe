@@ -1,8 +1,7 @@
 import React from 'react';
 import HomeTop from '../HomeTop.js';
 import LatestCourseSlider from '../LatestCourseSlider.js';
-import CourseList from '../CourseList.js';
-import { UG_CourseData, UG_CourseHeadingBox, PG_CourseData, PG_CourseHeadingBox,FeedbackHeadingBox, Mou_Data,StudentSay , MOU_HeadingBox, imgGalleryData, imgGallery_HeadingBox, removeArrow1, removeArrow2} from '../Data.js';
+import { UG_CourseData, UG_CourseHeadingBox, PG_CourseData, PG_CourseHeadingBox,FeedbackHeadingBox, Mou_Data,FeedbackData , MOU_HeadingBox, imgGalleryData, imgGallery_HeadingBox, removeArrow1, removeArrow2} from '../Data.js';
 import Course from '../Course.js';
 import backgroundImage from "../Images/LatestCourses_bg_img.jpg";
 import StudentFeedback from '../StudentFeedack.js';
@@ -34,7 +33,7 @@ import { FeedbackResponsive,responsive,MouResponsive } from '../Data.js';
           key = {item.id}
       />
       );
-      const FeedbackList = StudentSay.map(item =>
+      const FeedbackList = FeedbackData.map(item =>
         <StudentFeedback 
         image={item.image}
         description={item.description}
