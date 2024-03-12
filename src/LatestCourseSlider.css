@@ -1,14 +1,29 @@
-
-  
+  /* Common_Style */
   .Latest-Courses-Area{
     /* background: url(./Images/LatestCourses_bg_img.jpg); */
     background-position: 0px -60px;
     background-attachment: fixed;
-    padding: 90px 0px;
-  }  
+    padding: 10px 0px;
+  }
+
+  .LatestCourseContainer{
+    max-width: 1500px;
+    margin: 0px auto;
+    padding: 2rem;
+    text-align: center;
+    user-select: none;
+  }
 
   .LatestCourseTitleBox{
-    padding: 0px 10px;
+    margin: 0px auto;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .SliderContainer{
+    margin: 0px auto;
+    padding: 2rem;
+    text-align: center;
   }
   
   .LatestCourseTitleBox h1{
@@ -42,18 +57,14 @@
     cursor: grab;
   }
 
-  .LatestCourseContainer{
-    max-width: 1280px;
-    margin: 0px auto;
-    padding: 2rem;
-    text-align: center;
-    user-select: none;
-  }
-
   #LatestCourseDragging{
     cursor: grabbing;
   }
+  /* Common_Style */
 
+  /* ------------------------------------- */
+
+  /* Course_Style */
   .LatestCourseCard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
@@ -173,5 +184,36 @@
   position: absolute;
   bottom: 5px;
 }
+/* Course_Style */
+
+/* ------------------------------------- */
+
+/* Mou_Style */
+.MuoContainer{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto 1rem;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  user-select: none;
+}
+
+.MuoContainer img{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.MuoContainer:hover img{
+  transform: scale(1.1);
+}
+/* Mou_Style */
+
+/* ------------------------------------- */
+
 
 
