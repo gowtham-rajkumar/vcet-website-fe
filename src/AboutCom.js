@@ -13,7 +13,25 @@ import profit from './Images/profit.png'
 import structure from './Images/structure.png'
 import test from './Images/test.png'
 
+import {removeArrow1} from './Data.js'
+import {feedbackHeadingBox} from "./Data.js";
+import { feedbackResponsive } from "./Data.js";
+import Slider from "./Slider.js";
+import { feedbackData } from "./Data.js";
+import StudentFeedback from "./StudentFeedack.js";
+
+
 const About = () => {
+  const feedbackList = feedbackData.map(item =>
+    <StudentFeedback 
+    image={item.image}
+    description={item.description}
+    name={item.studentName}
+    position={item.position}  
+    key={item.id}   
+
+    />
+  )
   return (
     <div>
       <div className="aboutImage">
@@ -111,6 +129,13 @@ const About = () => {
             </div>
         </div>
       </div>
+      <Slider 
+       CourseList={feedbackList} 
+       heading={feedbackHeadingBox.heading}
+       description={feedbackHeadingBox.description}
+       responsive={feedbackResponsive} 
+       removeArrow = {removeArrow1}
+       />
       <Footer />
     </div>
   );

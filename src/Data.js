@@ -24,18 +24,18 @@ export const responsive = {
     }
 };
 
-export const UG_CourseHeadingBox = {
+export const ugCourse_HeadingBox = {
   heading: "UG Programmes",
   description: "Empower your trajectory with our renowned UG programmes",
 };
 
-export const PG_CourseHeadingBox = {
+export const pgCourse_HeadingBox = {
   heading: "PG Programmes",
   description:
     "Embark on a journey of excellence with our top tier PG programmes",
 };
 
-export const UG_CourseData = [
+export const ugCourseData = [
   {
     id: 1,
     img: "https://source.unsplash.com/random/500x250/?animal?1",
@@ -126,7 +126,7 @@ export const UG_CourseData = [
   },
 ];
 
-export const PG_CourseData = [
+export const pgCourseData = [
   {
     id: 1,
     img: "https://source.unsplash.com/random/500x250/?animal?1",
@@ -219,7 +219,7 @@ export const PG_CourseData = [
 
 // ........................@GowthamRajkumar (Mou.js Data )..........................
 
-export const MouResponsive = {
+export const mouResponsive = {
     superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 1024 },
@@ -243,12 +243,12 @@ export const MouResponsive = {
     }
 };
 
-export const MOU_HeadingBox = {
+export const mou_HeadingBox = {
     heading:"MOU", 
     description:"Formalized partnership facilitating mutual goals and strategic collaboration"
 };
 
-export const Mou_Data = [
+export const mouData = [
     {
         id: 1,
         img: "https://source.unsplash.com/random/500x250/?animal?1"
@@ -360,7 +360,7 @@ export const imgGalleryData = [
 // ........................@Boobalanselvarj (courseList Data )..........................
 
 // Data for "CourseList.js"
-export const CourseListData = [
+export const courseListData = [
   {
     id: 1,
     image: require("./Images/course one.png"),
@@ -435,7 +435,7 @@ export const CourseListData = [
   },
 ];
 //Responsive Data for " Slider (StudentFeedback.js) "
-export const FeedbackResponsive = {
+export const feedbackResponsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 1024 },
     items: 1,
@@ -458,7 +458,7 @@ export const FeedbackResponsive = {
   },
 };
 // Data for "StudentFeedback.js"
-export const FeedbackData = [
+export const feedbackData = [
   {
     id: 1,
     image: require("./Images/boobalan.jpg"),
@@ -485,7 +485,7 @@ export const FeedbackData = [
   },
 ];
 // Data for "StudentFeedback.js (Heading) "
-export const FeedbackHeadingBox = {
+export const feedbackHeadingBox = {
   heading: "What Our Students Say",
   description: "Testimonials from students",
 };

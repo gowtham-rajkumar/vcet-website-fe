@@ -1,12 +1,12 @@
   /* Common_Style */
-  .Latest-Courses-Area{
+  .sliderArea{
     /* background: url(./Images/LatestCourses_bg_img.jpg); */
     background-position: 0px -60px;
     background-attachment: fixed;
     padding: 10px 0px;
   }
 
-  .LatestCourseContainer{
+  .sliderContainer{
     max-width: 1500px;
     margin: 0px auto;
     padding: 2rem;
@@ -14,19 +14,19 @@
     user-select: none;
   }
 
-  .LatestCourseTitleBox{
+  .sliderTitleBox{
     margin: 0px auto;
     padding: 2rem;
     text-align: center;
   }
 
-  .SliderContainer{
+  .sliderContainer{
     margin: 0px auto;
     padding: 2rem;
     text-align: center;
   }
   
-  .LatestCourseTitleBox h1{
+  .sliderTitleBox h1{
     text-align: center;
     font-size: 2.625em;
     padding: 0px;
@@ -35,7 +35,7 @@
     font-weight: 700;
     color: #333333;
   }
-  .LatestCourseTitleBox p {
+  .sliderTitleBox p {
     text-align: center;
     font-size: 1.3125rem;
     margin: 0px 0px 10px;
@@ -53,11 +53,11 @@
     cursor: grab;
   } */
 
-  .LatestCourseSliderBox{
+  .sliderBox{
     cursor: grab;
   }
 
-  #LatestCourseDragging{
+  #sliderDragging{
     cursor: grabbing;
   }
   /* Common_Style */
