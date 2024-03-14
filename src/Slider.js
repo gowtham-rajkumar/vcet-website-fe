@@ -1,5 +1,5 @@
 import React from "react";
-import "./LatestCourseSlider.css";
+import "./Slider.css";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -27,7 +27,7 @@ const LatestCourseSlider = ({
     onSwiping: () => {
       setIsDragging(true);
     },
-    onSwiped: () => {
+    onSwiped: () => {   
       setIsDragging(false);
     },
   });
@@ -43,16 +43,16 @@ const LatestCourseSlider = ({
 
     return (
             <>
-            <section className='Latest-Courses-Area' style={{ backgroundImage: `url(${backgroundImage})` }}>
-                <div className='LatestCourseContainer'>
-                    <div className='LatestCourseTitleBox'>
+            <section className='sliderArea' style={{ backgroundImage: `url(${backgroundImage})` }}>
+                <div className='sliderContainer'>
+                    <div className='sliderTitleBox'>
                         <h1>{heading}</h1>
                         <p>{description}</p>
                     </div>
-                    <div className='SliderContainer'>
+                    <div className='sliderContainer'>
                         <div
-                            className="LatestCourseSliderBox"
-                            id={isDragging ? 'LatestCourseDragging' : ''}
+                            className="sliderBox"
+                            id={isDragging ? 'sliderDragging' : ''}
                             onMouseDown={handleDragStart}
                             onMouseUp={handleDragEnd}
                             {...handlers}

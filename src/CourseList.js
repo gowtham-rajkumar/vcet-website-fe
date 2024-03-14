@@ -1,5 +1,5 @@
 import './CourseListStyles.css'
-import {CourseListData} from './Data.js'
+import {courseListData} from './Data.js'
 // import courseOne from './Images/course one.png'
 // import courseTwo from './Images/course two.png'
 // import courseThree from './Images/course three.png'
@@ -15,14 +15,15 @@ import {CourseListData} from './Data.js'
 
 function CourseList() {
     return (
+        
         <section className="courseList">
             <div className="top-container">
                 <h1>Programmes In Our Institution</h1>
                 <p>Check our main courses and coachings</p>
             </div>
-      
+            
             <div className="heading-container">
-                {CourseListData.map(item=>
+            {courseListData.map(item=>
                 <div className="single-div" key={item.id}>
                 <div className="img-container">
                     <img src={item.image} alt="" />
@@ -140,8 +141,9 @@ function CourseList() {
                     </div>
                 </div> */}
             </div>
+            
         </section>
-
+       
     );
 }
 export default CourseList;
