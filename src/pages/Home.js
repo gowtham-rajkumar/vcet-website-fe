@@ -44,6 +44,7 @@ const Home = () => {
       key={item.id}
     />
   ));
+  //Student_Feedback_List
   const feedbackList = feedbackData.map((item) => (
     <StudentFeedback
       image={item.image}
@@ -61,7 +62,10 @@ const Home = () => {
   const imgGalleryList = imgGalleryData.map((item) => (
     <Mou img={item.img} key={item.id} />
   ));
+   //Faculty_Information_List
 
+  //  const facultyImformationList{
+  //  }
   return (
     <>
       <div>

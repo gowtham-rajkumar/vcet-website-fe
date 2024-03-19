@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Course = (props) => {
   return (
 <div className='LatestCourseCard'>
@@ -11,7 +10,7 @@ const Course = (props) => {
     </div>
     <h3>{props.program} - <span>{props.dept}</span></h3>
     <p className='LatestCourseName'>{props.description}</p>
-    <p className='LastestCourseDig'><a href="https://www.w3school.com">DIG DEEPER <i className="fa fa-angle-right"></i></a></p>
+    <p className='LastestCourseDig'><a href="./Footer.js" target="_blank" >DIG DEEPER <i className="fa fa-angle-right"></i></a></p>
 </div>
   )
 }

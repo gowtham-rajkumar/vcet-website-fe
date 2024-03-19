@@ -1,50 +1,51 @@
-  /* Common_Style */
-  .sliderArea{
-    /* background: url(./Images/LatestCourses_bg_img.jpg); */
-    background-position: 0px -60px;
-    background-attachment: fixed;
-    padding: 10px 0px;
-  }
+/* Common_Style */
+.sliderArea {
+  /* background: url(./Images/LatestCourses_bg_img.jpg); */
+  background-position: 0px -60px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 0px;
+}
 
-  .sliderContainer{
-    max-width: 1500px;
-    margin: 0px auto;
-    padding: 2rem;
-    text-align: center;
-    user-select: none;
-  }
+.sliderContainer {
+  max-width: 1500px;
+  margin: 0px auto;
+  padding: 2rem;
+  text-align: center;
+  user-select: none;
+}
 
-  .sliderTitleBox{
-    margin: 0px auto;
-    padding: 2rem;
-    text-align: center;
-  }
+.sliderTitleBox {
+  margin: 0px auto;
+  padding: 2rem;
+  text-align: center;
+}
 
-  .sliderContainer{
-    margin: 0px auto;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .sliderTitleBox h1{
-    text-align: center;
-    font-size: 2.625em;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
-    color: #333333;
-  }
-  .sliderTitleBox p {
-    text-align: center;
-    font-size: 1.3125rem;
-    margin: 0px 0px 10px;
-    color: #c0b48b;
-    font-family: 'LatoMedium', sans-serif;
-  }
-  
-  
-  /* .LatestCourseSliderBox {
+.sliderContainer {
+  margin: 0px auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.sliderTitleBox h1 {
+  text-align: center;
+  font-size: 2.625em;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  color: #333333;
+}
+.sliderTitleBox p {
+  text-align: center;
+  font-size: 1.3125rem;
+  margin: 0px 0px 10px;
+  color: #c0b48b;
+  font-family: "LatoMedium", sans-serif;
+}
+
+/* .LatestCourseSliderBox {
     max-width: 1280px;
     margin: 0px auto;
     padding: 2rem;
@@ -53,76 +54,81 @@
     cursor: grab;
   } */
 
-  .sliderBox{
-    cursor: grab;
-  }
+.sliderBox {
+  cursor: grab;
+}
 
-  #sliderDragging{
-    cursor: grabbing;
-  }
-  /* Common_Style */
-
-  /* ------------------------------------- */
-
-  /* Course_Style */
-  .LatestCourseCard {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    max-width: 500px;
-    margin: auto 1rem;
-    text-align: left;
-    font-family: 'LatoMedium', sans-serif;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 1px solid #cccccc;
-    position: relative;
-    /* transition: transform 300ms ease-in-out; */
-  }
-
-  
-  .LatestCourse-image{
-    height: 250px;
-    overflow: hidden;
+#sliderDragging {
+  cursor: grabbing;
+}
+@media screen and (max-width: 500px) {
+  .sliderContainer {
+    margin: 0px auto;
+    padding: 1rem;
     text-align: center;
   }
-  
-  .LatestCourse-image img {
-    width: 100%;
-    height: 250px;
-    /* height: 15em; */
-    object-fit: cover;
-    pointer-events: none;
-    transition: transform 0.3s ease;
-    transform-origin: center;
-  }
+}
+/* Common_Style */
 
-  .LatestCourseCard:hover img{
-    transform: scale(1.1);
-  }
-    
-  .LatestCourseCard h3 {
-    color: #333333;
-    /* text-transform: uppercase; */
-    font-weight: 500;
-    /* margin-top: 10px;
+/* ------------------------------------- */
+
+/* Course_Style */
+.LatestCourseCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  max-width: 500px;
+  margin: auto 1rem;
+  text-align: left;
+  font-family: "LatoMedium", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  position: relative;
+  /* transition: transform 300ms ease-in-out; */
+}
+
+.LatestCourse-image {
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.LatestCourse-image img {
+  width: 100%;
+  height: 250px;
+  /* height: 15em; */
+  object-fit: cover;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.LatestCourseCard:hover img {
+  transform: scale(1.1);
+}
+
+.LatestCourseCard h3 {
+  color: #333333;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  /* margin-top: 10px;
     margin-bottom: 10px; */
-    padding: 10px 10px 5px;
-  }
+  padding: 10px 10px 5px;
+}
 
-  .LatestCourseCard:hover span{
-      color: #ff3d00;
-    
-  }
+.LatestCourseCard:hover span {
+  color: #ff3d00;
+}
 
-  .LatestCourseName {
-    color: #777777;
-    /* margin-top: 10px;
+.LatestCourseName {
+  color: #777777;
+  /* margin-top: 10px;
     margin-bottom: 10px; */
-    padding: 10px 10px 5px;
-    /* line-height: 26px; */
-  }
+  padding: 10px 10px 5px;
+  /* line-height: 26px; */
+}
 
-  /* .LatestCourseDuration{
+/* .LatestCourseDuration{
     color: #333333;
     font-weight: 700;
     font-size: 0.875rem;
@@ -131,29 +137,28 @@
     padding: 10px 10px 10px;
   } */
 
-  .LastestCourseDig{
-    /* margin-top: 10px;
+.LastestCourseDig {
+  /* margin-top: 10px;
     margin-bottom: 10px; */
-    padding: 10px 10px 10px;
-  }
+  padding: 10px 10px 10px;
+}
 
+.LastestCourseDig a {
+  font-family: "LatoHeavy", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  /* padding: 10px; */
+  text-decoration: none;
+  color: #ff3d00;
+  /* transition: color 0.3s ease; */
+}
 
-  .LastestCourseDig a{
-    font-family: 'LatoHeavy', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 700;
-    cursor: pointer;
-    /* padding: 10px; */
-    text-decoration: none;
-    color: #ff3d00;
-    /* transition: color 0.3s ease; */
-  }
+.LatestCourseCard i {
+  color: #ff3d00;
+}
 
-  .LatestCourseCard i{
-    color: #ff3d00;
-  }
-
-  /* .LatestCourseCard button {
+/* .LatestCourseCard button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -172,7 +177,7 @@
   } */
 
 .LatestCourseCard {
-    height: 425px;
+  height: 425px;
 }
 
 /* .LatestCourseBottomDiv{
@@ -180,7 +185,7 @@
   bottom: 5px;
 } */
 
-.LastestCourseDig{
+.LastestCourseDig {
   position: absolute;
   bottom: 5px;
 }
@@ -189,7 +194,7 @@
 /* ------------------------------------- */
 
 /* Mou_Style */
-.MuoContainer{
+.MuoContainer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 500px;
   margin: auto 1rem;
@@ -199,7 +204,7 @@
   user-select: none;
 }
 
-.MuoContainer img{
+.MuoContainer img {
   width: 100%;
   height: auto;
   display: block;
@@ -209,12 +214,59 @@
   transform-origin: center;
 }
 
-.MuoContainer:hover img{
+.MuoContainer:hover img {
   transform: scale(1.1);
 }
 /* Mou_Style */
 
 /* ------------------------------------- */
 
+/*  StudentFeedback style */
+.stdTopContainer {
+  height: 50%;
+}
+.stdBottomContainer {
+  height: 50%;
+}
+.stdImg {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.stdImg > img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 8px solid #6666;
+}
+/* .stdIcon {
+  position: absolute;
+  bottom: 0%;
+  right: 47%;
+} */
 
-
+.std-para {
+  margin-top: 35px;
+}
+.std-para > p {
+  text-align: center;
+  margin: 10px 50px;
+  color: #666;
+  cursor: text;
+}
+.std-para > h3 {
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: text;
+}
+.std-para > h3 > span {
+  margin-right: 5px;
+}
+@media screen and (max-width: 500px) {
+  .std-para > p {
+    text-align: center;
+    margin: 10px 30px;
+    color: #666;
+  }
+}
