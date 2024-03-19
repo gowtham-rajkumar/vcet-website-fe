@@ -1,5 +1,5 @@
-import './CourseListStyles.css'
-import {courseListData} from './Data.js'
+import "./CourseListStyles.css";
+import { courseListData } from "./Data.js";
 // import courseOne from './Images/course one.png'
 // import courseTwo from './Images/course two.png'
 // import courseThree from './Images/course three.png'
@@ -14,33 +14,37 @@ import {courseListData} from './Data.js'
 // import imgSix from './Images/icon_course_6.png'
 
 function CourseList() {
-    return (
-        
-        <section className="courseList">
-            <div className="top-container">
-                <h1>Programmes In Our Institution</h1>
-                <p>Check our main courses and coachings</p>
-            </div>
-            
-            <div className="heading-container">
-            {courseListData.map(item=>
-                <div className="single-div" key={item.id}>
-                <div className="img-container">
-                    <img src={item.image} alt="" />
-                </div>
-                <div className="bottom-container">
-                    <div className="inner-img"> <img src={item.icon} alt="" /></div>
-                   
-                    <h2>{item.title}</h2>
-                    <p>{item.description}</p>
-                    <a href="https://www.instagram.com/">Dig Deeper</a>
-                    <i class="fa fa-angle-right"></i>
-                </div>
-            </div>
-                    )}
-                
+  return (
+    <section className="courseList">
+      <div className="top-container">
+        <h1>Laboratores In Our Department</h1>
+        <p>
+          Circuiting Creativity : Bridging the Gap Between Imagination and
+          Implementation
+        </p>
+      </div>
 
-                {/* <div className="single-div">
+      <div className="heading-container">
+        {courseListData.map((item) => (
+          <div className="single-div" key={item.id}>
+            <div className="img-container">
+              <img src={item.image} alt="" />
+            </div>
+            <div className="bottom-container">
+              <div className="inner-img">
+                {" "}
+                <img src={item.icon} alt="" />
+              </div>
+
+              <h2>{item.title}</h2>
+              <p>{item.description}</p>
+              <a href="https://www.instagram.com/">Dig Deeper</a>
+              <i class="fa fa-angle-right"></i>
+            </div>
+          </div>
+        ))}
+
+        {/* <div className="single-div">
                     <div className="img-container">
                         <img src={courseTwo} alt="" />
                     </div>
@@ -140,10 +144,8 @@ function CourseList() {
                         <i className="fa fa-angle-right"></i>
                     </div>
                 </div> */}
-            </div>
-            
-        </section>
-       
-    );
+      </div>
+    </section>
+  );
 }
 export default CourseList;
