@@ -1,27 +1,27 @@
 // ........................@GowthamRajkumar (Course.js Data )..........................
 
 export const responsive = {
-    superLargeDesktop: {
-        // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 1024 },
-        items: 3,
-        slidesToSlide: 1 //Default value is 1
-    },
-    desktop: {
-        breakpoint: { max: 1024, min: 800 },
-        items: 3,
-        slidesToSlide: 1
-    },
-    tablet: {
-        breakpoint: { max: 800, min: 500 },
-        items: 2,
-        slidesToSlide: 1
-    },
-    mobile: {
-        breakpoint: { max: 500, min: 0 },
-        items: 1,
-        slidesToSlide: 1
-    }
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 1024 },
+    items: 3,
+    slidesToSlide: 1, //Default value is 1
+  },
+  desktop: {
+    breakpoint: { max: 1024, min: 800 },
+    items: 3,
+    slidesToSlide: 1,
+  },
+  tablet: {
+    breakpoint: { max: 800, min: 500 },
+    items: 2,
+    slidesToSlide: 1,
+  },
+  mobile: {
+    breakpoint: { max: 500, min: 0 },
+    items: 1,
+    slidesToSlide: 1,
+  },
 };
 
 export const ugCourse_HeadingBox = {
@@ -207,154 +207,156 @@ export const pgCourseData = [
       "Harnessing AI to create intelligent systems for a smarter world.",
   },
 
-    {
-        id: 10,
-        img: "https://source.unsplash.com/random/500x250/?animal?10",
-        program: "B.Tech",
-        dept: "IT",
-        description: "Empowering the digital era with cutting-edge IT solutions and innovations."
-    }
-
+  {
+    id: 10,
+    img: "https://source.unsplash.com/random/500x250/?animal?10",
+    program: "B.Tech",
+    dept: "IT",
+    description:
+      "Empowering the digital era with cutting-edge IT solutions and innovations.",
+  },
 ];
 
 // ........................@GowthamRajkumar (Mou.js Data )..........................
 
 export const mouResponsive = {
-    superLargeDesktop: {
-        // the naming can be any, depends on you.
-        breakpoint: { max: 4000, min: 1024 },
-        items: 4,
-        slidesToSlide: 1
-    },
-    desktop: {
-        breakpoint: { max: 1024, min: 800 },
-        items: 3,
-        slidesToSlide: 1
-    },
-    tablet: {
-        breakpoint: { max: 800, min: 500 },
-        items: 2,
-        slidesToSlide: 1
-    },
-    mobile: {
-        breakpoint: { max: 500, min: 0 },
-        items: 1,
-        slidesToSlide: 1
-    }
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 1024 },
+    items: 4,
+    slidesToSlide: 1,
+  },
+  desktop: {
+    breakpoint: { max: 1024, min: 800 },
+    items: 3,
+    slidesToSlide: 1,
+  },
+  tablet: {
+    breakpoint: { max: 800, min: 500 },
+    items: 2,
+    slidesToSlide: 1,
+  },
+  mobile: {
+    breakpoint: { max: 500, min: 0 },
+    items: 1,
+    slidesToSlide: 1,
+  },
 };
 
 export const mou_HeadingBox = {
-    heading:"MOU", 
-    description:"Formalized partnership facilitating mutual goals and strategic collaboration"
+  heading: "MOU",
+  description:
+    "Formalized partnership facilitating mutual goals and strategic collaboration",
 };
 
 export const mouData = [
-    {
-        id: 1,
-        img: "https://source.unsplash.com/random/500x250/?animal?1"
-    },
+  {
+    id: 1,
+    img: "https://source.unsplash.com/random/500x250/?animal?1",
+  },
 
-    {
-        id: 2,
-        img: "https://source.unsplash.com/random/500x250/?animal?2"
-    },
+  {
+    id: 2,
+    img: "https://source.unsplash.com/random/500x250/?animal?2",
+  },
 
-    {
-        id: 3,
-        img: "https://source.unsplash.com/random/500x250/?animal?3"
-    },
+  {
+    id: 3,
+    img: "https://source.unsplash.com/random/500x250/?animal?3",
+  },
 
-    {
-        id: 4,
-        img: "https://source.unsplash.com/random/500x250/?animal?4"
-    },
+  {
+    id: 4,
+    img: "https://source.unsplash.com/random/500x250/?animal?4",
+  },
 
-    {
-        id: 5,
-        img: "https://source.unsplash.com/random/500x250/?animal?5"
-    },
+  {
+    id: 5,
+    img: "https://source.unsplash.com/random/500x250/?animal?5",
+  },
 
-    {
-        id: 6,
-        img: "https://source.unsplash.com/random/500x250/?animal?6"
-    },
+  {
+    id: 6,
+    img: "https://source.unsplash.com/random/500x250/?animal?6",
+  },
 
-    {
-        id: 7,
-        img: "https://source.unsplash.com/random/500x250/?animal?7"
-    },
+  {
+    id: 7,
+    img: "https://source.unsplash.com/random/500x250/?animal?7",
+  },
 
-    {
-        id: 8,
-        img: "https://source.unsplash.com/random/500x250/?animal?8"
-    },
+  {
+    id: 8,
+    img: "https://source.unsplash.com/random/500x250/?animal?8",
+  },
 
-    {
-        id: 9,
-        img: "https://source.unsplash.com/random/500x250/?animal?9"
-    },
+  {
+    id: 9,
+    img: "https://source.unsplash.com/random/500x250/?animal?9",
+  },
 
-    {
-        id: 10,
-        img: "https://source.unsplash.com/random/500x250/?animal?10"
-    }
+  {
+    id: 10,
+    img: "https://source.unsplash.com/random/500x250/?animal?10",
+  },
 ];
 
-export const imgGallery_HeadingBox ={
-    heading:"Image Gallery", 
-    description:"Visual journey through the vibrant life of our esteemed institution"
-}
+export const imgGallery_HeadingBox = {
+  heading: "Image Gallery",
+  description:
+    "Visual journey through the vibrant life of our esteemed institution",
+};
 
 export const imgGalleryData = [
-    {
-        id: 1,
-        img: "https://source.unsplash.com/random/500x350/?animal?1"
-    },
+  {
+    id: 1,
+    img: "https://source.unsplash.com/random/500x350/?animal?1",
+  },
 
-    {
-        id: 2,
-        img: "https://source.unsplash.com/random/500x350/?animal?2"
-    },
+  {
+    id: 2,
+    img: "https://source.unsplash.com/random/500x350/?animal?2",
+  },
 
-    {
-        id: 3,
-        img: "https://source.unsplash.com/random/500x350/?animal?3"
-    },
+  {
+    id: 3,
+    img: "https://source.unsplash.com/random/500x350/?animal?3",
+  },
 
-    {
-        id: 4,
-        img: "https://source.unsplash.com/random/500x350/?animal?4"
-    },
+  {
+    id: 4,
+    img: "https://source.unsplash.com/random/500x350/?animal?4",
+  },
 
-    {
-        id: 5,
-        img: "https://source.unsplash.com/random/500x350/?animal?5"
-    },
+  {
+    id: 5,
+    img: "https://source.unsplash.com/random/500x350/?animal?5",
+  },
 
-    {
-        id: 6,
-        img: "https://source.unsplash.com/random/500x350/?animal?6"
-    },
+  {
+    id: 6,
+    img: "https://source.unsplash.com/random/500x350/?animal?6",
+  },
 
-    {
-        id: 7,
-        img: "https://source.unsplash.com/random/500x350/?animal?7"
-    },
+  {
+    id: 7,
+    img: "https://source.unsplash.com/random/500x350/?animal?7",
+  },
 
-    {
-        id: 8,
-        img: "https://source.unsplash.com/random/500x350/?animal?8"
-    },
+  {
+    id: 8,
+    img: "https://source.unsplash.com/random/500x350/?animal?8",
+  },
 
-    {
-        id: 9,
-        img: "https://source.unsplash.com/random/500x350/?animal?9"
-    },
+  {
+    id: 9,
+    img: "https://source.unsplash.com/random/500x350/?animal?9",
+  },
 
-    {
-        id: 10,
-        img: "https://source.unsplash.com/random/500x350/?animal?10"
-    }
+  {
+    id: 10,
+    img: "https://source.unsplash.com/random/500x350/?animal?10",
+  },
 ];
 
 // ........................@Boobalanselvarj (courseList Data )..........................
@@ -492,4 +494,180 @@ export const feedbackHeadingBox = {
 
 // ........................Remove Arrows On Devices..........................
 export const removeArrow1 = ["mobile"];
-export const removeArrow2 = ["mobile", "tablet", "desktop", "superLargeDesktop"];
+export const removeArrow2 = [
+  "mobile",
+  "tablet",
+  "desktop",
+  "superLargeDesktop",
+];
+
+// Datas for Faculty Informations (Heading)
+export const facultyHeadingBox = {
+  heading: "Faculties In Our Department",
+  description:
+    "Nurturing Excellence in Electronics and Communication Engineering",
+};
+
+export const facultyData = [
+  {
+    id: 1,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?56",
+    name: "P. Jayachandar",
+    position: "Assistant Professor & Dean",
+    description: "Inspiring Excellence Every Day.",
+  },
+  {
+    id: 2,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?54",
+    name: "Dr. K. Venkatachalam",
+    position: "Professor",
+    description: "Nurturing Talent, Fostering Growth.",
+  },
+  {
+    id: 3,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?1",
+    name: "Dr. S. Mahendrakumar",
+    position: "Professor",
+    description: "Educating Minds, Shaping Futures.",
+  },
+  {
+    id: 4,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?5",
+    name: "Dr. S. Rajan",
+    position: "Professor",
+    description: "Inspiring Excellence Every Day.",
+  },
+  {
+    id: 5,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?6",
+    name: "Dr. K. Senthil Prakash",
+    position: "Associate Professor",
+    description: "Nurturing Talent, Fostering Growth.",
+  },
+  {
+    id: 6,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?7",
+    name: "Dr. V. Gowrishankar",
+    position: "Associate Professor",
+    description: "Empowering Dreams, Guiding Paths.",
+  },
+  {
+    id: 7,
+    img: "https://source.unsplash.com/500x500/?college+staff+female+portrait/?91",
+    name: "Dr. M. Parimala Devi",
+    position: "Associate Professor",
+    description: "Passionate Professionals.",
+  },
+  {
+    id: 8,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?8",
+    name: "P. Senthil Kumar",
+    position: "Assistant Professor",
+    description: "Dedicated Staff, Brighter Futures.",
+  },
+  {
+    id: 9,
+    img: "https://source.unsplash.com/500x500/?college+staff+female+portrait/?41",
+    name: "S. Pavithra",
+    position: "Assistant Professor",
+    description: "Excellence in Education, Every Effort.",
+  },
+  {
+    id: 10,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?9",
+    name: "K. S. Murugesan",
+    position: "Assistant Professor",
+    description: "Guiding Brilliance, Building Tomorrow.",
+  },
+  {
+    id: 11,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?10",
+    name: "R. Gopalan",
+    position: "Assistant Professor",
+    description: "Cultivating Potential, Creating Leaders.",
+  },
+  {
+    id: 12,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?12",
+    name: "N. Karthikeyan",
+    position: "Assistant Professor",
+    description: "Committed to Student Success.",
+  },
+  {
+    id: 13,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?13",
+    name: "S. Pooranachandran",
+    position: "Assistant Professor",
+    description: "Empowering Through Education.",
+  },
+  {
+    id: 14,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?14",
+    name: "G. Boopathi Raja",
+    position: "Assistant Professor",
+    description: "Excellence in Teaching, Always.",
+  },
+  {
+    id: 15,
+    img: "https://source.unsplash.com/500x500/?college+staff+female+portrait/?7",
+    name: "T. Sathya",
+    position: "Assistant Professor",
+    description: "Inspiring Learning Journeys, Together.",
+  },
+  {
+    id: 16,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?15",
+    name: "S. Nachimuthu",
+    position: "Assistant Professor",
+    description: "Mentorship Matters, Always.",
+  },
+  {
+    id: 17,
+    img: "https://source.unsplash.com/500x500/?college+staff+female+portrait/?13",
+    name: "P. Nandhini",
+    position: "Assistant Professor",
+    description: "Empowering Dreams, Guiding Paths.",
+  },
+  {
+    id: 18,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?16",
+    name: "K. K. Pradeep",
+    position: "Assistant Professor",
+    description: "Inspiring Growth, Igniting Potential.",
+  },
+  {
+    id: 19,
+    img: "https://source.unsplash.com/500x500/?college+staff+female+portrait/?7",
+    name: "V. Sakthipriya",
+    position: "Assistant Professor",
+    description: "Educators Empowering Excellence.",
+  },
+  {
+    id: 20,
+    img: "https://source.unsplash.com/500x500/?college+staff+female+portrait/?19",
+    name: "S. Aiswarya",
+    position: "Assistant Professor",
+    description: "Shaping Minds, Building Futures.",
+  },
+  {
+    id: 21,
+    img: "https://source.unsplash.com/500x500/?college+staff+female+portrait/?10",
+    name: "M. Ruba",
+    position: "Assistant Professor",
+    description: "Excellence in Teaching, Inspiring Minds.",
+  },
+  {
+    id: 22,
+    img: "https://source.unsplash.com/500x500/?college+staff+female+portrait/?2",
+    name: "C. Santhini",
+    position: "Assistant Professor",
+    description: "Dedicated to Student Achievement.",
+  },
+  {
+    id: 23,
+    img: "https://source.unsplash.com/500x500/?college+staff+female+portrait/?1",
+    name: "R. Hemalatha",
+    position: "Assistant Professor",
+    description: "Building Brighter Futures, Together.",
+  },
+];
