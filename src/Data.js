@@ -310,52 +310,52 @@ export const imgGallery_HeadingBox = {
 export const imgGalleryData = [
   {
     id: 1,
-    img: "https://source.unsplash.com/random/500x350/?animal?1",
+    img: require("./Images/clg_night_look_1.jpeg"),
   },
 
   {
     id: 2,
-    img: "https://source.unsplash.com/random/500x350/?animal?2",
+    img: require("./Images/clg_night_look_3.jpeg"),
   },
 
   {
     id: 3,
-    img: "https://source.unsplash.com/random/500x350/?animal?3",
+    img: require("./Images/clg_night_look_2.jpeg"),
   },
 
   {
     id: 4,
-    img: "https://source.unsplash.com/random/500x350/?animal?4",
+    img: require("./Images/clg_night_look_4.jpeg"),
   },
 
   {
     id: 5,
-    img: "https://source.unsplash.com/random/500x350/?animal?5",
+    img:require("./Images/clg_outer_look_1.jpeg"),
   },
 
   {
     id: 6,
-    img: "https://source.unsplash.com/random/500x350/?animal?6",
+    img:require("./Images/clg_outer_look_4.jpeg"),
   },
 
   {
     id: 7,
-    img: "https://source.unsplash.com/random/500x350/?animal?7",
+    img:require("./Images/clg_outer_look_2.jpeg"),
   },
 
   {
     id: 8,
-    img: "https://source.unsplash.com/random/500x350/?animal?8",
+    img:require("./Images/clg_outer_look_4.jpeg"),
   },
 
   {
     id: 9,
-    img: "https://source.unsplash.com/random/500x350/?animal?9",
+    img:require("./Images/clg_outer_look_5.jpeg"),
   },
 
   {
     id: 10,
-    img: "https://source.unsplash.com/random/500x350/?animal?10",
+    img:require("./Images/clg_outer_look_1.jpeg"),
   },
 ];
 
@@ -365,75 +365,51 @@ export const imgGalleryData = [
 export const courseListData = [
   {
     id: 1,
-    image: require("./Images/course one.png"),
+    image: require("./Images/microcontroller lab.webp"),
     icon: require("./Images/icon_course_1.png"),
-    title: "Artificial intelligence and data Science",
+    title: "Microprocessor and Microcontroller Laboratory",
     description:
-      "Utilizes Quartz for predictive analysis, data mining, machine learning, and decision-making processes in diverse fields like finance and healthcare.",
+      "Delve into the world of microprocessors and microcontrollers in our state-of-the-art laboratory. Explore hands-on experiments and projects to understand the intricacies of these fundamental components in modern electronics.",
   },
   {
     id: 2,
-    image: require("./Images/course two.png"),
+    image: require("./Images/VLSI lab.webp"),
     icon: require("./Images/icon_course_2.png"),
-    title: "Artificial intelligence and machine learning",
+    title: "Signal Processing and VLSI Design Laboratory",
     description:
-      "Develops algorithms to enable machines to learn from data, adapt, and make decisions autonomously.",
+      "Step into the realm of signal processing and VLSI design in our cutting-edge laboratory. Dive deep into algorithm development and design methodologies to create innovative solutions for digital signal processing and VLSI circuit design challenges.",
   },
   {
     id: 3,
-    image: require("./Images/course four.png"),
+    image: require("./Images/electronics lab.webp"),
     icon: require("./Images/icon_course_4.png"),
-    title: "Biomedical engineering",
+    title: "Devices and Electronics Laboratory",
     description:
-      "Applies engineering principles to healthcare, designing devices, systems, and therapies for diagnosing and treating diseases.",
+      "Experience the intersection of engineering and healthcare in our Devices and Electronics Laboratory. From designing medical devices to developing advanced electronic systems, explore how electronics revolutionize healthcare diagnosis and treatment.",
   },
   {
     id: 4,
-    image: require("./Images/course three.png"),
+    image: require("./Images/Microprocessor lab.webp"),
     icon: require("./Images/icon_course_1.png"),
-    title: "Civil engineering",
+    title: "IC and Communication Laboratory",
     description:
-      "Plans, designs, and oversees construction of public infrastructure, from roads and bridges to buildings and airports.Focuses on the design and analysis of structures like buildings, bridges, dams, and towers.",
+      "Embark on a journey into the realm of integrated circuits (IC) and communication systems in our laboratory. Discover the principles of IC design and communication protocols as you engage in hands-on projects to build and analyze communication networks.",
   },
   {
     id: 5,
-    image: require("./Images/course five.png"),
+    image: require("./Images/networks lab.webp"),
     icon: require("./Images/icon_course_5.png"),
-    title: "Computer science and engineering",
+    title: "Network and Simulation Laboratory",
     description:
-      "Focuses on software development, computer systems design, and computer networks to drive innovation and technology.",
+      "Enter the dynamic world of network systems and simulations in our cutting-edge laboratory. Explore software development, computer systems design, and network architecture to drive innovation and technology advancement.",
   },
   {
     id: 6,
-    image: require("./Images/course six.png"),
+    image: require("./Images/optical lab.jpeg"),
     icon: require("./Images/icon_course_6.png"),
-    title: "Electronics and communication engineering",
+    title: "Microwave and Optical Communication Laboratory",
     description:
-      "Designs, develops, and manages electronic systems for data communication, telecommunications, and information processing.",
-  },
-  {
-    id: 7,
-    image: require("./Images/course three.png"),
-    icon: require("./Images/icon_course_1.png"),
-    title: "Electronics and electrical engineering",
-    description:
-      "Creates and maintains electrical systems for power generation, distribution, and control in various industries.",
-  },
-  {
-    id: 8,
-    image: require("./Images/course one.png"),
-    icon: require("./Images/icon_course_3.png"),
-    title: "Information technology",
-    description:
-      "Manages, implements, and supports technology solutions to improve efficiency, productivity, and decision-making in organizations.",
-  },
-  {
-    id: 9,
-    image: require("./Images/course five.png"),
-    icon: require("./Images/icon_course_5.png"),
-    title: "Mechanical engineering",
-    description:
-      "Develops and designs mechanical systems and devices, from engines to manufacturing tools, to solve engineering challenges.",
+      "Immerse yourself in the fascinating domain of microwave and optical communication in our advanced laboratory. From designing communication systems to managing data transmission, explore the principles and technologies shaping modern communication networks.",
   },
 ];
 //Responsive Data for " Slider (StudentFeedback.js) "
@@ -511,10 +487,10 @@ export const facultyHeadingBox = {
 export const facultyData = [
   {
     id: 1,
-    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?56",
-    name: "P. Jayachandar",
-    position: "Assistant Professor & Dean",
-    description: "Inspiring Excellence Every Day.",
+    img: "https://source.unsplash.com/500x500/?college+staff+female+portrait/?1",
+    name: "Dr. M. Nisha Angeline",
+    position: "Professor & Head",
+    description: "Building Brighter Futures, Together.",
   },
   {
     id: 2,
@@ -669,5 +645,12 @@ export const facultyData = [
     name: "R. Hemalatha",
     position: "Assistant Professor",
     description: "Building Brighter Futures, Together.",
+  },
+  {
+    id: 24,
+    img: "https://source.unsplash.com/500x500/?college+staff+male+portrait/?56",
+    name: "P. Jayachandar",
+    position: "Assistant Professor & Dean",
+    description: "Inspiring Excellence Every Day.",
   },
 ];

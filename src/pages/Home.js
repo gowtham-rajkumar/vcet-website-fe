@@ -21,6 +21,7 @@ import StudentFeedback from "../StudentFeedack.js";
 import Footer from "../Footer.js";
 import Mou from "../Mou.js";
 import { feedbackResponsive, responsive, mouResponsive } from "../Data.js";
+import Whychoose from "../Whychoose.js";
 
 const Home = () => {
   //UG_Course_List
@@ -90,14 +91,8 @@ const Home = () => {
         />
 
         {/* <CourseList /> */}
-
-        <Slider
-          CourseList={feedbackList}
-          heading={feedbackHeadingBox.heading}
-          description={feedbackHeadingBox.description}
-          responsive={feedbackResponsive}
-          removeArrow={removeArrow1}
-        />
+      <Whychoose />
+        
 
         <Slider
           CourseList={imgGalleryList}
@@ -105,6 +100,13 @@ const Home = () => {
           description={imgGallery_HeadingBox.description}
           // backgroundImage = {backgroundImage}
           responsive={responsive}
+          removeArrow={removeArrow1}
+        />
+        <Slider
+          CourseList={feedbackList}
+          heading={feedbackHeadingBox.heading}
+          description={feedbackHeadingBox.description}
+          responsive={feedbackResponsive}
           removeArrow={removeArrow1}
         />
 

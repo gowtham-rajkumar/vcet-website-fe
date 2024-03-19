@@ -9,6 +9,7 @@ import {
   responsive,
   removeArrow1,
 } from "./Data.js";
+import CourseList from "./CourseList.js";
 const Practice = () => {
   const facultyInformationList = facultyData.map((item) => (
     <FacultyInformations
@@ -20,6 +21,8 @@ const Practice = () => {
     />
   ));
   return (
+    <>
+    <CourseList />
     <Slider
       CourseList={facultyInformationList}
       heading={facultyHeadingBox.heading}
@@ -28,6 +31,7 @@ const Practice = () => {
       responsive={responsive}
       removeArrow={removeArrow1}
     />
+    </>
   );
 };
 export default Practice;
