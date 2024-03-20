@@ -29,7 +29,7 @@
 .single-div {
   /* min-height: 400px; */
   flex: 1;
-  flex-basis: 25%;
+  flex-basis: 28%;
   background: #f8f8f8;
   border: 1px solid #ececec;
   margin: 20px;
@@ -63,6 +63,7 @@
   margin-top: 10px;
   margin-bottom: 50px;
   text-align: justify;
+  line-height: 1.5rem;
 }
 .bottom-container > a,
 .bottom-container > i {

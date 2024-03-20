@@ -36,8 +36,6 @@
   font-weight: bold;
   /* text-transform: uppercase; */
   font-weight: 500;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
   padding: 5px 0;
   margin-left: 10px;
 }
@@ -53,4 +51,16 @@
   color: #ff3d00;
   font-size: 0.9rem;
   font-family: "LatoMedium", sans-serif;
+}
+
+.dep-heading {
+  background-color: #ff3d00;
+  text-align: center;
+}
+.dep-heading > h1 {
+  color: white;
+  font-size: 2rem;
+  padding: 10px 0;
+  font-family: "Courier New", Courier, monospace;
+  user-select: none;
 }

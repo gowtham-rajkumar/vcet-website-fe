@@ -1,7 +1,7 @@
 import React from "react";
 import "./PracticeStyles.css";
-import FacultyInformations from "./FacultyInformations";
-import Slider from "./Slider";
+import FacultyInformations from "./FacultyInformations.jsx";
+import Slider from "./Slider.js";
 import background from "./Images/electronic.jpg";
 import {
   facultyData,
@@ -22,15 +22,18 @@ const Practice = () => {
   ));
   return (
     <>
-    <CourseList />
-    <Slider
-      CourseList={facultyInformationList}
-      heading={facultyHeadingBox.heading}
-      description={facultyHeadingBox.description}
-      backgroundImage={background}
-      responsive={responsive}
-      removeArrow={removeArrow1}
-    />
+      <div className="dep-heading">
+        <h1>THE DEPARTMENT OF ELECTRONICS AND COMMUNICATION</h1>
+      </div>
+      <CourseList />
+      <Slider
+        CourseList={facultyInformationList}
+        heading={facultyHeadingBox.heading}
+        description={facultyHeadingBox.description}
+        backgroundImage={background}
+        responsive={responsive}
+        removeArrow={removeArrow1}
+      />
     </>
   );
 };

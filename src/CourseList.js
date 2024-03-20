@@ -12,7 +12,6 @@ import { courseListData } from "./Data.js";
 // import imgFour from './Images/icon_course_4.png'
 // import imgFive from './Images/icon_course_5.png'
 // import imgSix from './Images/icon_course_6.png'
-
 function CourseList() {
   return (
     <section className="courseList">
@@ -33,12 +32,14 @@ function CourseList() {
             <div className="bottom-container">
               <div className="inner-img">
                 {" "}
-                <img src={item.icon} alt="" />
+                <img src={item.icon} alt="icon" />
               </div>
 
               <h2>{item.title}</h2>
               <p>{item.description}</p>
-              <a href="https://www.instagram.com/">Dig Deeper</a>
+              <a href="https://www.djangoproject.com/">
+                Dig Deeper
+              </a>
               <i class="fa fa-angle-right"></i>
             </div>
           </div>

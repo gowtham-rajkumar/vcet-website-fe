@@ -5,23 +5,22 @@ import  Home  from "./pages/Home";
 import  Courses  from "./pages/Courses";
 import About from './AboutCom';
 import Events from "./pages/Events.js";
+import EceDepartment from './EceDepartment.jsx'
 
 
 function App() {
   return (
     <>
       <Router>
-        {/* <div className="App"> */}
         <Navbar />
         <Routes>
-          <Route path="/" Component={Home} />
-          <Route path="/Contact" Component={Contact} />
-          <Route path="/Courses" Component={Courses} />
-          <Route path="/About" Component={About} />
-          <Route path="/Events" Component={Events} />
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/courses" element={<Courses/>} />
+          <Route path="/about" element={<About />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/eceDepartment" element={<EceDepartment />} />
         </Routes>
-
-        {/* </div> */}
       </Router>
     </>
   );

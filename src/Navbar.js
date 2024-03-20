@@ -17,21 +17,29 @@ const Navbar = () => {
           onClick={handleClick}
         >
           <li>
-            <NavLink to='/' activeclassname='active'>
+            <NavLink to="/" activeclassname="active">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" activeclassname ='active'>About</NavLink>
+            <NavLink to="/about" activeclassname="active">
+              About
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/courses" activeclassname='active'>Courses</NavLink>
+            <NavLink to="/courses" activeclassname="active">
+              Courses
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/events" activeclassname='active'>Events</NavLink>
+            <NavLink to="/events" activeclassname="active">
+              Events
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" activeclassname='active'>Contact</NavLink>
+            <NavLink to="/contact" activeclassname="active">
+              Contact
+            </NavLink>
           </li>
         </ul>
       </div>
