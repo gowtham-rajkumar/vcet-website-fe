@@ -253,51 +253,61 @@ export const mouData = [
   {
     id: 1,
     img: "https://source.unsplash.com/random/500x250/?animal?1",
+    classelection:'True'
   },
 
   {
     id: 2,
     img: "https://source.unsplash.com/random/500x250/?animal?2",
+    classelection:'True'
   },
 
   {
     id: 3,
     img: "https://source.unsplash.com/random/500x250/?animal?3",
+    classelection:'True'
   },
 
   {
     id: 4,
     img: "https://source.unsplash.com/random/500x250/?animal?4",
+    classelection:'True'
   },
 
   {
     id: 5,
     img: "https://source.unsplash.com/random/500x250/?animal?5",
+    classelection:'True'
   },
 
   {
     id: 6,
     img: "https://source.unsplash.com/random/500x250/?animal?6",
+    classelection:'True'
   },
 
   {
     id: 7,
     img: "https://source.unsplash.com/random/500x250/?animal?7",
+    classelection:'True'
   },
 
   {
     id: 8,
     img: "https://source.unsplash.com/random/500x250/?animal?8",
+    classelection:'True'
   },
 
   {
     id: 9,
     img: "https://source.unsplash.com/random/500x250/?animal?9",
+    classelection:'True'
   },
 
   {
     id: 10,
     img: "https://source.unsplash.com/random/500x250/?animal?10",
+    classelection:'True'
   },
 ];
 
@@ -311,51 +321,61 @@ export const imgGalleryData = [
   {
     id: 1,
     img: require("./Images/clg_night_look_1.jpeg"),
+    classelection:'False'
   },
 
   {
     id: 2,
     img: require("./Images/clg_night_look_3.jpeg"),
+    classelection:'False'
   },
 
   {
     id: 3,
     img: require("./Images/clg_night_look_2.jpeg"),
+    classelection:'False'
   },
 
   {
     id: 4,
     img: require("./Images/clg_night_look_4.jpeg"),
+    classelection:'False'
   },
 
   {
     id: 5,
     img:require("./Images/clg_outer_look_1.jpeg"),
+    classelection:'False'
   },
 
   {
     id: 6,
     img:require("./Images/clg_outer_look_4.jpeg"),
+    classelection:'False'
   },
 
   {
     id: 7,
     img:require("./Images/clg_outer_look_2.jpeg"),
+    classelection:'False'
   },
 
   {
     id: 8,
     img:require("./Images/clg_outer_look_4.jpeg"),
+    classelection:'False'
   },
 
   {
     id: 9,
     img:require("./Images/clg_outer_look_5.jpeg"),
+    classelection:'False'
   },
 
   {
     id: 10,
     img:require("./Images/clg_outer_look_1.jpeg"),
+    classelection:'False'
   },
 ];
 

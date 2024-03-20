@@ -57,16 +57,19 @@ const Home = () => {
   ));
 
   //MOU_List
-  const mouList = mouData.map((item) => <Mou img={item.img} key={item.id} />);
+  const mouList = mouData.map((item) => (
+    <Mou img={item.img} key={item.id} classelection={item.classelection} />
+  ));
 
   //Image_Gallery_List
   const imgGalleryList = imgGalleryData.map((item) => (
-    <Mou img={item.img} key={item.id} />
+    <Mou img={item.img} key={item.id} classelection={item.classelection} />
   ));
-   //Faculty_Information_List
+  //Faculty_Information_List
 
   //  const facultyImformationList{
   //  }
+  console.log(imgGalleryData.map((item) => item.classelection));
   return (
     <>
       <div>
@@ -91,8 +94,7 @@ const Home = () => {
         />
 
         {/* <CourseList /> */}
-      <Whychoose />
-        
+        <Whychoose />
 
         <Slider
           CourseList={imgGalleryList}
