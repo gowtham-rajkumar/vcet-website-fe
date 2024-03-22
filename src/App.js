@@ -1,12 +1,11 @@
-import Contact from "./ContactCom";
+import Contact from "./components/ContactCom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Navbar";
-import  Home  from "./pages/Home";
-import  Courses  from "./pages/Courses";
-import About from './AboutCom';
-import Events from "./pages/Events.js";
-import EceDepartment from './EceDepartment.jsx'
-
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Courses from "./pages/Courses";
+import About from "./components/AboutCom";
+import Events from "./pages/Events";
+import EceDepartment from "./components/EceDepartment";
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/courses" element={<Courses/>} />
+          <Route path="/courses" element={<Courses />} />
           <Route path="/about" element={<About />} />
           <Route path="/events" element={<Events />} />
           <Route path="/eceDepartment" element={<EceDepartment />} />

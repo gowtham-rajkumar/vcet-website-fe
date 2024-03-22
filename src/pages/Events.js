@@ -1,8 +1,9 @@
-import React from 'react'
-import Practice from '../EceDepartment.jsx'
+import React from "react";
 const Events = () => {
   return (
-    <Practice />
-  )
-}
-export default Events
+    <h2 style={{ textAlign: "center", backgroundColor: "lightyellow" }}>
+      We're working on it. We will release as soon as possible
+    </h2>
+  );
+};
+export default Events;
