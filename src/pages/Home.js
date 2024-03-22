@@ -1,6 +1,6 @@
 import React from "react";
-import HomeTop from "../HomeTop.js";
-import Slider from "../Slider.js";
+import HomeTop from "../components/HomeTop";
+import Slider from "../Slider";
 import {
   ugCourseData,
   ugCourse_HeadingBox,
@@ -14,14 +14,14 @@ import {
   imgGallery_HeadingBox,
   removeArrow1,
   removeArrow2,
-} from "../Data.js";
-import Course from "../Course.js";
+} from "../Data";
+import Course from "../Course";
 import backgroundImage from "../Images/LatestCourses_bg_img.jpg";
-import StudentFeedback from "../StudentFeedack.js";
-import Footer from "../Footer.js";
-import Mou from "../Mou.js";
-import { feedbackResponsive, responsive, mouResponsive } from "../Data.js";
-import Whychoose from "../Whychoose.js";
+import StudentFeedback from "../components/StudentFeedack";
+import Footer from "../Footer";
+import Mou from "../Mou";
+import { feedbackResponsive, responsive, mouResponsive } from "../Data";
+import Whychoose from "../Whychoose";
 
 const Home = () => {
   //UG_Course_List

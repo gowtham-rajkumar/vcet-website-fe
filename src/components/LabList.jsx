@@ -1,5 +1,5 @@
-import "./CourseListStyles.css";
-import { courseListData } from "./Data.js";
+import "./LabListStyles.css";
+import { labListData } from "../Data.js";
 // import courseOne from './Images/course one.png'
 // import courseTwo from './Images/course two.png'
 // import courseThree from './Images/course three.png'
@@ -24,7 +24,7 @@ function CourseList() {
       </div>
 
       <div className="heading-container">
-        {courseListData.map((item) => (
+        {labListData.map((item) => (
           <div className="single-div" key={item.id}>
             <div className="img-container">
               <img src={item.image} alt="" />
@@ -37,9 +37,7 @@ function CourseList() {
 
               <h2>{item.title}</h2>
               <p>{item.description}</p>
-              <a href="https://www.djangoproject.com/">
-                Dig Deeper
-              </a>
+              <a href="https://www.djangoproject.com/">Dig Deeper</a>
               <i class="fa fa-angle-right"></i>
             </div>
           </div>

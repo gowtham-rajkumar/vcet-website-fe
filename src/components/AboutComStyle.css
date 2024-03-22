@@ -4,7 +4,7 @@ h1{
 
 .aboutImage {
   position: relative;
-  background: url(./Images/Aboutpic.jpg);
+  background: url(../Images/Aboutpic.jpg);
   height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@ h1{
 }
 
 .subNav-containers {
-  background: url(./Images/bgimg-about.png);
+  background: url(../Images/bgimg-about.png);
   background-attachment: fixed;
   display: flex;
   background-color: #ff3d00;
@@ -157,7 +157,7 @@ i {
 }
 
 .applycontainer {
-  background: url(./Images/bgimg-about.png);
+  background: url(../Images/bgimg-about.png);
   background-attachment: fixed;
   background-color: #ff3d00;
   padding: 40px;

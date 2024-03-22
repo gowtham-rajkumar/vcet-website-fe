@@ -1,5 +1,5 @@
 import './HomeTopStyles.css';
-import TeacherImg from './Images/header_bottom_photo.png'
+import TeacherImg from '../Images/header_bottom_photo.png'
 const HomeTop = () =>{
     return(
     <section className='Total-div'>

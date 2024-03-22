@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from '../ContactCom.js'
+import Contact from '../components/ContactCom'
 const Contact=()=>{
     return(
         <>

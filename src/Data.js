@@ -379,10 +379,10 @@ export const imgGalleryData = [
   },
 ];
 
-// ........................@Boobalanselvarj (courseList Data )..........................
+// ........................@Boobalanselvarj (LabList Data )..........................
 
 // Data for "CourseList.js"
-export const courseListData = [
+export const labListData = [
   {
     id: 1,
     image: require("./Images/microcontroller lab.webp"),

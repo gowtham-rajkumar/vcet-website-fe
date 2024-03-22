@@ -1,15 +1,15 @@
 import React from "react";
-import "./PracticeStyles.css";
+import "./EceDepartmentStyles.css";
 import FacultyInformations from "./FacultyInformations.jsx";
-import Slider from "./Slider.js";
-import background from "./Images/electronic.jpg";
+import Slider from "../Slider.js";
+import background from "../Images/electronic.jpg";
 import {
   facultyData,
   facultyHeadingBox,
   responsive,
   removeArrow1,
-} from "./Data.js";
-import CourseList from "./CourseList.js";
+} from "../Data.js";
+import CourseList from "./LabList.jsx";
 const Practice = () => {
   const facultyInformationList = facultyData.map((item) => (
     <FacultyInformations
