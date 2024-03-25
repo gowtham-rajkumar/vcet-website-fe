@@ -9,16 +9,14 @@ const Whychoose = () => {
   return (
     <div className='whyChoose'>
         <div className='whyImage'>
-            <img src={why}/>
+            <img src={why} alt='chooose img'/>
         </div>
         <div className='whyContent'>
             <h1>Why Choose Us ?</h1>
             <p>
-                The ship set ground on the shore of this uncharted desert isle with Gilligan the Skipper too the millionaire and his wife. These days are all Happy and Free. These days are all share them with me.
-            </p>
-            <p>
-                It's time to put on makeup. It's time to dress up right. It's time to raise the curtain on the Muppet Show tonight.
-            </p>
+            we stand out as a beacon of academic excellence, innovation, and holistic development. With state-of-the-art facilities and industry-relevant curriculum, we provide students with hands-on learning opportunities and a supportive environment to thrive. Our commitment to nurturing talent is evident in our alumni's success stories, showcasing the transformative impact of a velalr college of engineering and technology education.
+</p>
+            
             <div className='whylogo'>
                 <div className='division'>
                     <img className='firimg' src={Facluty} alt="" />

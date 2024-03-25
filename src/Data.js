@@ -38,7 +38,7 @@ export const pgCourse_HeadingBox = {
 export const ugCourseData = [
   {
     id: 1,
-    img: "https://source.unsplash.com/random/500x250/?animal?1",
+    img: require("./Images/bme.jpg"),
     program: "B.E",
     dept: "BME",
     description:
@@ -47,7 +47,7 @@ export const ugCourseData = [
 
   {
     id: 2,
-    img: "https://source.unsplash.com/random/500x250/?animal?2",
+    img: require("./Images/civil.jpg"),
     program: "B.E",
     dept: "Civil",
     description:
@@ -56,7 +56,7 @@ export const ugCourseData = [
 
   {
     id: 3,
-    img: "https://source.unsplash.com/random/500x250/?animal?3",
+    img: require("./Images/cse.jpg"),
     program: "B.E",
     dept: "CSE",
     description:
@@ -65,7 +65,7 @@ export const ugCourseData = [
 
   {
     id: 4,
-    img: "https://source.unsplash.com/random/500x250/?animal?4",
+    img: require("./Images/eee.jpg"),
     program: "B.E",
     dept: "EEE",
     description:
@@ -74,7 +74,7 @@ export const ugCourseData = [
 
   {
     id: 5,
-    img: "https://source.unsplash.com/random/500x250/?animal?5",
+    img: require("./Images/ece.jpg"),
     program: "B.E",
     dept: "ECE",
     description:
@@ -83,7 +83,7 @@ export const ugCourseData = [
 
   {
     id: 6,
-    img: "https://source.unsplash.com/random/500x250/?animal?6",
+    img: require("./Images/mech.jpg"),
     program: "B.E",
     dept: "Mech",
     description:
@@ -92,7 +92,7 @@ export const ugCourseData = [
 
   {
     id: 7,
-    img: "https://source.unsplash.com/random/500x250/?animal?7",
+    img: require("./Images/mde.jpg"),
     program: "B.E",
     dept: "MDE",
     description: "Pioneering medical technology for healthier tomorrows.",
@@ -100,7 +100,7 @@ export const ugCourseData = [
 
   {
     id: 8,
-    img: "https://source.unsplash.com/random/500x250/?animal?8",
+    img: require("./Images/aids.jpg"),
     program: "B.Tech",
     dept: "AIDS",
     description:
@@ -109,7 +109,7 @@ export const ugCourseData = [
 
   {
     id: 9,
-    img: "https://source.unsplash.com/random/500x250/?animal?9",
+    img: require("./Images/aiml.jpg"),
     program: "B.Tech",
     dept: "AIML",
     description:
@@ -118,7 +118,7 @@ export const ugCourseData = [
 
   {
     id: 10,
-    img: "https://source.unsplash.com/random/500x250/?animal?10",
+    img: require("./Images/it.jpg"),
     program: "B.Tech",
     dept: "IT",
     description:
@@ -129,92 +129,40 @@ export const ugCourseData = [
 export const pgCourseData = [
   {
     id: 1,
-    img: "https://source.unsplash.com/random/500x250/?animal?1",
-    program: "B.E",
-    dept: "BME",
-    description:
-      "Innovating health solutions for tomorrow's medical advancements.",
-  },
-
-  {
-    id: 2,
-    img: "https://source.unsplash.com/random/500x250/?animal?2",
-    program: "B.E",
-    dept: "Civil",
-    description:
-      "Building the world with precision and sustainability in mind.",
-  },
-
-  {
-    id: 3,
-    img: "https://source.unsplash.com/random/500x250/?animal?3",
-    program: "B.E",
+    img:require("./Images/me-cse.jpg"),
+    program: "M.E",
     dept: "CSE",
     description:
-      "Transforming ideas into cutting-edge technology for a digital future.",
-  },
-
-  {
+    "Pioneering algorithms for secure data in digital landscapes.",
+    },
+    
+    {
+    id: 2,
+    img:require("./Images/ae.jpg"),
+    program: "M.E",
+    dept: "AE",
+    description:
+    "Crafting structures for resilience in a changing environment.",
+    },
+    
+    {
+    id: 3,
+    img: require("./Images/me-bme.jpg"),
+    program: "M.E",
+    dept: "BME",
+    description:
+    "Fusing biology and technology for life-changing innovations.",
+    },
+    
+    {
     id: 4,
-    img: "https://source.unsplash.com/random/500x250/?animal?4",
-    program: "B.E",
-    dept: "EEE",
+    img:require("./Images/mba.webp"),
+    program: "M.B.A",
+    dept: "MBA",
     description:
-      "Powering technological innovations shaping our electrifying world.",
-  },
-
-  {
-    id: 5,
-    img: "https://source.unsplash.com/random/500x250/?animal?5",
-    program: "B.E",
-    dept: "ECE",
-    description:
-      "Empowering global connectivity through integrated electronic systems.",
-  },
-
-  {
-    id: 6,
-    img: "https://source.unsplash.com/random/500x250/?animal?6",
-    program: "B.E",
-    dept: "Mech",
-    description:
-      "Engineering excellence driving industries forward with innovative solutions.",
-  },
-
-  {
-    id: 7,
-    img: "https://source.unsplash.com/random/500x250/?animal?7",
-    program: "B.E",
-    dept: "MDE",
-    description: "Pioneering medical technology for healthier tomorrows.",
-  },
-
-  {
-    id: 8,
-    img: "https://source.unsplash.com/random/500x250/?animal?8",
-    program: "B.Tech",
-    dept: "AIDS",
-    description:
-      "Unleashing the potential of data with AI for transformative insights.",
-  },
-
-  {
-    id: 9,
-    img: "https://source.unsplash.com/random/500x250/?animal?9",
-    program: "B.Tech",
-    dept: "AIML",
-    description:
-      "Harnessing AI to create intelligent systems for a smarter world.",
-  },
-
-  {
-    id: 10,
-    img: "https://source.unsplash.com/random/500x250/?animal?10",
-    program: "B.Tech",
-    dept: "IT",
-    description:
-      "Empowering the digital era with cutting-edge IT solutions and innovations.",
-  },
+    "Strategizing business growth in dynamic market ecosystems.",
+    },
+ 
 ];
 
 // ........................@GowthamRajkumar (Mou.js Data )..........................
@@ -252,62 +200,44 @@ export const mou_HeadingBox = {
 export const mouData = [
   {
     id: 1,
-    img: "https://source.unsplash.com/random/500x250/?animal?1",
-    classelection:'True'
+    img: require("./Images/cic.webp"),
+    classelection: "True",
   },
 
   {
     id: 2,
-    img: "https://source.unsplash.com/random/500x250/?animal?2",
-    classelection:'True'
+    img: require("./Images/ee.webp"),
+    classelection: "True",
   },
 
   {
     id: 3,
-    img: "https://source.unsplash.com/random/500x250/?animal?3",
-    classelection:'True'
+    img: require("./Images/god.webp"),
+    classelection: "True",
   },
 
   {
     id: 4,
-    img: "https://source.unsplash.com/random/500x250/?animal?4",
-    classelection:'True'
+    img: require("./Images/cubes.webp"),
+    classelection: "True",
   },
 
   {
     id: 5,
-    img: "https://source.unsplash.com/random/500x250/?animal?5",
-    classelection:'True'
+    img: require("./Images/wipro.webp"),
+    classelection: "True",
   },
 
   {
     id: 6,
-    img: "https://source.unsplash.com/random/500x250/?animal?6",
-    classelection:'True'
+    img: require("./Images/sigma.webp"),
+    classelection: "True",
   },
 
   {
     id: 7,
-    img: "https://source.unsplash.com/random/500x250/?animal?7",
-    classelection:'True'
-  },
-
-  {
-    id: 8,
-    img: "https://source.unsplash.com/random/500x250/?animal?8",
-    classelection:'True'
-  },
-
-  {
-    id: 9,
-    img: "https://source.unsplash.com/random/500x250/?animal?9",
-    classelection:'True'
-  },
-
-  {
-    id: 10,
-    img: "https://source.unsplash.com/random/500x250/?animal?10",
-    classelection:'True'
+    img: require("./Images/aspiring.webp"),
+    classelection: "True",
   },
 ];
 
@@ -321,61 +251,61 @@ export const imgGalleryData = [
   {
     id: 1,
     img: require("./Images/clg_night_look_1.jpeg"),
-    classelection:'False'
+    classelection: "False",
   },
 
   {
     id: 2,
     img: require("./Images/clg_night_look_3.jpeg"),
-    classelection:'False'
+    classelection: "False",
   },
 
   {
     id: 3,
     img: require("./Images/clg_night_look_2.jpeg"),
-    classelection:'False'
+    classelection: "False",
   },
 
   {
     id: 4,
     img: require("./Images/clg_night_look_4.jpeg"),
-    classelection:'False'
+    classelection: "False",
   },
 
   {
     id: 5,
-    img:require("./Images/clg_outer_look_1.jpeg"),
-    classelection:'False'
+    img: require("./Images/clg_outer_look_1.jpeg"),
+    classelection: "False",
   },
 
   {
     id: 6,
-    img:require("./Images/clg_outer_look_4.jpeg"),
-    classelection:'False'
+    img: require("./Images/clg_outer_look_4.jpeg"),
+    classelection: "False",
   },
 
   {
     id: 7,
-    img:require("./Images/clg_outer_look_2.jpeg"),
-    classelection:'False'
+    img: require("./Images/clg_outer_look_2.jpeg"),
+    classelection: "False",
   },
 
   {
     id: 8,
-    img:require("./Images/clg_outer_look_4.jpeg"),
-    classelection:'False'
+    img: require("./Images/clg_outer_look_4.jpeg"),
+    classelection: "False",
   },
 
   {
     id: 9,
-    img:require("./Images/clg_outer_look_5.jpeg"),
-    classelection:'False'
+    img: require("./Images/clg_outer_look_5.jpeg"),
+    classelection: "False",
   },
 
   {
     id: 10,
-    img:require("./Images/clg_outer_look_1.jpeg"),
-    classelection:'False'
+    img: require("./Images/clg_outer_look_1.jpeg"),
+    classelection: "False",
   },
 ];
 
