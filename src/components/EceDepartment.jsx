@@ -1,7 +1,7 @@
 import React from "react";
 import "./EceDepartmentStyles.css";
 import FacultyInformations from "./FacultyInformations.jsx";
-import Slider from "../Slider.js";
+import Slider from "../components/Slider";
 import background from "../Images/electronic.jpg";
 import {
   facultyData,

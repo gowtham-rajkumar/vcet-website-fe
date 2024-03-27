@@ -1,9 +1,9 @@
 import React from 'react'
 import './WhychooseStyle.css'
-import why from './Images/why.jpg'
-import Facluty from './Images/Facluty.png'
-import courses from './Images/courses.png'
-import Gaurantee from './Images/Gaurantee.png'
+import why from '../Images/why.jpg'
+import Facluty from '../Images/Facluty.png'
+import courses from '../Images/courses.png'
+import Gaurantee from '../Images/Gaurantee.png'
 
 const Whychoose = () => {
   return (

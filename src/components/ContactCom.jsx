@@ -1,5 +1,5 @@
 import "./ContactComStyles.css";
-import Footer from "../Footer";
+import Footer from "../components/Footer";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { BsPrinter } from "react-icons/bs";
