@@ -2,8 +2,8 @@ import React from "react";
 
 import "./AboutComStyle.css";
 
-import Whychoose from "../Whychoose.js";
-import Footer from "../Footer.js";
+import Whychoose from "./Whychoose";
+import Footer from "../components/Footer";
 
 import masterimg from "../Images/masterimg.png";
 import bachelorimg from "../Images/bachelorimg.png";
@@ -16,7 +16,7 @@ import test from "../Images/test.png";
 import { removeArrow1 } from "../Data.js";
 import { feedbackHeadingBox } from "../Data.js";
 import { feedbackResponsive } from "../Data.js";
-import Slider from "../Slider.js";
+import Slider from "./Slider";
 import { feedbackData } from "../Data.js";
 import StudentFeedback from "./StudentFeedack";
 
