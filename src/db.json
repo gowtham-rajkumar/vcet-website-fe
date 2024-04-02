@@ -1,0 +1,44 @@
+{
+  "user": [
+    {
+      "id": "Boobalan",
+      "firstname": "Boo",
+      "lastname": "balan",
+      "email": "smartBoobalan77@gmail.com",
+      "password": "123",
+      "confirmpassword": "123"
+    },
+    {
+      "id": "Boobalan",
+      "firstname": "Boo",
+      "lastname": "balan",
+      "email": "mohanrajramu2006@gmail.com",
+      "password": "123",
+      "confirmpassword": "123"
+    },
+    {
+      "id": "dwdw",
+      "firstname": "smart",
+      "lastname": "wwd",
+      "email": "smartBoobalan77@gmail.com",
+      "password": "123",
+      "confirmpassword": "123"
+    },
+    {
+      "id": "efff",
+      "firstname": "Boo",
+      "lastname": "S",
+      "email": "mohanrajramu2006@gmail.com",
+      "password": "123",
+      "confirmpassword": "123"
+    },
+    {
+      "id": "Boobalan",
+      "firstname": "smart",
+      "lastname": "wwd",
+      "email": "ashok3612@gmail.com",
+      "password": "123",
+      "confirmpassword": "123"
+    }
+  ]
+}

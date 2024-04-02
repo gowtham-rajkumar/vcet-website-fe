@@ -19,6 +19,7 @@ const Courses = () => {
       dept={item.dept}
       description={item.description}
       key={item.id}
+      learnmore={item.learnmore}
     />
   ));
 

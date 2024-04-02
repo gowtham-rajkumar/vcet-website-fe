@@ -32,6 +32,7 @@ const Home = () => {
       dept={item.dept}
       description={item.description}
       key={item.id}
+      learnmore ={item.learnmore}
     />
   ));
 
@@ -43,6 +44,7 @@ const Home = () => {
       dept={item.dept}
       description={item.description}
       key={item.id}
+      learnmore ={item.learnmore}
     />
   ));
   //Student_Feedback_List
