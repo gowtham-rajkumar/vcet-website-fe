@@ -115,16 +115,15 @@ td {
   padding: 10px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+#username,
+#password {
   width: 100%;
   padding: 8px;
   margin: 5px 0;
   box-sizing: border-box;
 }
 
-button {
+.log-button {
   background-color: #4caf50;
   color: white;
   padding: 10px 20px;
@@ -133,7 +132,7 @@ button {
   border-radius: 5px;
 }
 
-button:hover {
+.log-button:hover {
   background-color: #45a049;
 }
 

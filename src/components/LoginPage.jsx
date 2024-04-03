@@ -4,17 +4,35 @@ import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import "./LoginPageStyles.css";
 import { useState } from "react";
-import {toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { auth } from "../Firebase";
+import { useNavigate } from "react-router-dom";
 const LoginPage = () => {
-  const [username, setUsername] = useState();
-  const [password, setPassword] = useState();
-  const handlesubmit = (e) => {
-    e.preventDefault();
-    toast.success("Success");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [showpassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+
+  const changeState = () => {
+    setShowPassword(!showpassword);
   };
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    try {
+      await auth.signInWithEmailAndPassword(username, password);
+      console.log(username, password);
+      navigate("/ecedepartment");
+    } catch (error) {
+      console.log(error.message);
+      toast.error("Check your Email and Password");
+    }
+  };
+
   return (
     <>
+      <ToastContainer></ToastContainer>
       <div className="dep-heading">
         <h1>THE DEPARTMENT OF ELECTRONICS AND COMMUNICATION</h1>
       </div>
@@ -24,13 +42,13 @@ const LoginPage = () => {
             <img src={Login} alt="login" />
           </div>
           <div className="log-bottom">
-            <div class="log-nav">
+            <div className="log-nav">
               <ul style={{ listStyle: "none" }}>
                 <li>
                   <h3 style={{ fontSize: "1.5rem" }}>SignIn</h3>
                 </li>
               </ul>
-              <ul class="social-icons">
+              <ul className="social-icons">
                 <li>
                   <FaFacebook />
                 </li>
@@ -40,35 +58,41 @@ const LoginPage = () => {
               </ul>
             </div>
             <div className="log-form">
-              <form action="">
+              <form onSubmit={handleLogin}>
                 <div className="form-items">
                   <input
                     type="text"
                     id="username"
                     name="username"
                     value={username}
-                    onChange={e=>setUsername(e.target.value)}
+                    onChange={(e) => setUsername(e.target.value)}
                     placeholder="Enter Your Username"
                     required
                   />
                   <input
-                    type="password"
+                    type={showpassword ? "text" : "password"}
                     id="password"
                     name="password"
                     value={password}
-                    onChange={e=>setPassword(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                     placeholder="Enter Your Password"
                     required
                   />
                   <div className="remember-me">
-                    <input type="checkbox" id="remember" name="remember" />
-                    <label htmlFor="remember">Remember Me</label>
+                    <input
+                      type="checkbox"
+                      id="remember"
+                      name="remember"
+                      checked={showpassword}
+                      onChange={changeState}
+                    />
+                    <label htmlFor="remember">show Password</label>
                   </div>
-                  <button type="submit" onClick={(e) => handlesubmit(e)}>
+                  <button className="log-button" type="submit">
                     Sign In
                   </button>
                   <p>
-                    Don't have an account ?{" "}
+                    Don't have an account?{" "}
                     <a href="/registrationpage">Register here</a>
                   </p>
                 </div>

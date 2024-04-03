@@ -9,14 +9,14 @@ import EceDepartment from "./components/EceDepartment";
 import OtherDepartment from "./components/OtherDepartments";
 import LoginPage from "./components/LoginPage";
 import RegistrationPage from "./components/RegistrationPage";
-import { ToastContainer } from "react-toastify";
+// import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <>
       <Router>
-       <ToastContainer></ToastContainer>
+       {/* <ToastContainer></ToastContainer> */}
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,7 +26,9 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/loginPage" element={<LoginPage />} />
           <Route path="/otherDepartment" element={<OtherDepartment />} />
-          <Route path="/registrationpage" element={<RegistrationPage />}></Route>
+          <Route path="/registrationpage" element={<RegistrationPage />}/>
+          <Route path ="/ecedepartment" element={<EceDepartment />} />
+            
 
         </Routes>
       </Router>

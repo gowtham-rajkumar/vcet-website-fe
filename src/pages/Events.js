@@ -1,12 +1,12 @@
 import React from "react";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 const Events = () => {
   const handleclick = () => {
-    toast.success("Hitting button is success", {
-      theme: "colored",
-      autoClose: 900,
-    });
+    // toast.success("Hitting button is success", {
+    //   theme: "colored",
+    //   autoClose: 900,
+    // });
     // toast.success("hello");
     // toast.error("hello");
     // toast.warning("hello");
@@ -22,7 +22,7 @@ const Events = () => {
       >
         click me
       </button>
-      <ToastContainer></ToastContainer>
+      {/* <ToastContainer></ToastContainer> */}
     </>
   );
 };
