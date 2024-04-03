@@ -51,7 +51,6 @@ const Practice = () => {
         responsive={responsive}
         removeArrow={removeArrow1}
       />
-
       <Footer />
     </>
   );
