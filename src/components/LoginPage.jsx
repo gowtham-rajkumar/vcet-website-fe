@@ -25,8 +25,24 @@ const LoginPage = () => {
       console.log(username, password);
       navigate("/ecedepartment");
     } catch (error) {
-      console.log(error.message);
-      toast.error("Check your Email and Password");
+      var code = error.code;
+      switch (code) {
+        case "auth/invalid-email":
+          toast.warn("Invalid Email", { theme: "colored" });
+          break;
+        case "auth/user-disabled":
+          toast.info("User account has been disabled.", { theme: "colored" });
+          break;
+        case "auth/user-not-found":
+          toast.warn("User not found.", { theme: "colored" });
+          break;
+        case "auth/invalid-credential":
+          toast.warn("invalid-credential.", { theme: "colored" });
+          break;
+        default:
+          toast.info("Somthing Went Wrong", { theme: "colored" });
+          console.log(error.message);
+      }
     }
   };
 

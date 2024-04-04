@@ -4,7 +4,6 @@ import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../Firebase";
 const RegistrationPage = () => {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -13,14 +12,28 @@ const RegistrationPage = () => {
     e.preventDefault();
     try {
       await auth.createUserWithEmailAndPassword(email, password);
-      alert("Registerd Successfully")
+      alert("Registerd Successfully");
       toast.success("Registerd Successfully", { theme: "colored" });
       navigation("/loginpage");
-     
-      
     } catch (error) {
-      console.log(error.message);
-      toast.warn("Invalid Email or password", { theme: "colored" });
+      var code = error.code;
+      switch (code) {
+        case "auth/email-already-in-use":
+          toast.warn("Email Already In Use. Try Different One",{ theme: "colored" });
+          break;
+        case "auth/invalid-email":
+          toast.warn("Invalid Email - Provide The Correct Email ",{ theme: "colored" });
+          break;
+        case "auth/weak-password":
+          toast.info("Password should be at least 6 characters" ,{ theme: "colored" });
+          break;
+        case "auth/maximum-user-count-exceeded":
+          toast.warn("Maximum User Reached - Inform To Department",{theme:'colored'})
+          break;
+        default:
+          toast.info("Something Went Wrong")
+          console.log(error.message)
+      }
     }
   };
   return (
