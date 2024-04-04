@@ -64,3 +64,16 @@
   font-family: "Courier New", Courier, monospace;
   user-select: none;
 }
+.logout-container {
+  position: absolute;
+  right: 1%;
+}
+.logout-container > button {
+  padding: 5px 10px;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 10px;
+  align-items: center;
+}
