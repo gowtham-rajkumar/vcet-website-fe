@@ -43,7 +43,7 @@ export const ugCourseData = [
     dept: "BME",
     description:
       "Innovating health solutions for tomorrow's medical advancements.",
-    learnmore : "/otherDepartment"
+    learnmore : "/otherdepartment"
   },
 
   {
@@ -53,7 +53,7 @@ export const ugCourseData = [
     dept: "Civil",
     description:
       "Building the world with precision and sustainability in mind.",
-    learnmore : "/otherDepartment"
+    learnmore : "/otherdepartment"
   },
 
   {
@@ -93,7 +93,7 @@ export const ugCourseData = [
     dept: "Mech",
     description:
       "Engineering excellence driving industries forward with innovative solutions.",
-    learnmore : "/otherDepartment"
+    learnmore : "/otherdepartment"
   },
 
   {
@@ -102,7 +102,7 @@ export const ugCourseData = [
     program: "B.E",
     dept: "MDE",
     description: "Pioneering medical technology for healthier tomorrows.",
-    learnmore : "/otherDepartment"
+    learnmore : "/otherdepartment"
   },
 
   {
@@ -112,7 +112,7 @@ export const ugCourseData = [
     dept: "AIDS",
     description:
       "Unleashing the potential of data with AI for transformative insights.",
-    learnmore : "/otherDepartment"
+    learnmore : "/otherdepartment"
   },
 
   {
@@ -122,7 +122,7 @@ export const ugCourseData = [
     dept: "AIML",
     description:
       "Harnessing AI to create intelligent systems for a smarter world.",
-    learnmore : "/otherDepartment"
+    learnmore : "/otherdepartment"
   },
 
   {
@@ -132,7 +132,7 @@ export const ugCourseData = [
     dept: "IT",
     description:
       "Empowering the digital era with cutting-edge IT solutions and innovations.",
-    learnmore : "/otherDepartment"
+    learnmore : "/otherdepartment"
     },
 ];
 
@@ -142,7 +142,7 @@ export const pgCourseData = [
     img:require("./Images/me-cse.jpg"),
     program: "M.E",
     dept: "CSE",
-    learnmore : "/otherDepartment",
+    learnmore : "/otherdepartment",
     description:
     "Pioneering algorithms for secure data in digital landscapes.",
     },
@@ -152,7 +152,7 @@ export const pgCourseData = [
     img:require("./Images/ae.jpg"),
     program: "M.E",
     dept: "AE",
-    learnmore : "/otherDepartment",
+    learnmore : "/otherdepartment",
     description:
     "Crafting structures for resilience in a changing environment.",
     },
@@ -162,7 +162,7 @@ export const pgCourseData = [
     img: require("./Images/me-bme.jpg"),
     program: "M.E",
     dept: "BME",
-    learnmore : "/otherDepartment",
+    learnmore : "/otherdepartment",
     description:
     "Fusing biology and technology for life-changing innovations.",
     },
@@ -172,7 +172,7 @@ export const pgCourseData = [
     img:require("./Images/mba.webp"),
     program: "M.B.A",
     dept: "MBA",
-    learnmore : "/otherDepartment",
+    learnmore : "/otherdepartment",
     description:
     "Strategizing business growth in dynamic market ecosystems.",
     },

@@ -42,7 +42,12 @@ const RegistrationPage = () => {
       <div className="dep-heading">
         <h1>THE DEPARTMENT OF ELECTRONICS AND COMMUNICATION</h1>
       </div>
-      <form action="" onSubmit={handleRegister}>
+      <div className="table-container" > 
+      <div className="table-data-container">
+        <div className="register">
+          <h3>Register</h3>
+        </div>
+      <form onSubmit={handleRegister}>
         <table>
           <tbody>
             <tr>
@@ -56,7 +61,7 @@ const RegistrationPage = () => {
                   id="mail"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email mail id"
+                  placeholder="Enter your Email Id"
                   required
                 />
               </td>
@@ -71,9 +76,10 @@ const RegistrationPage = () => {
                   type="password"
                   name="password"
                   id="password"
+                  className="password-reg"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  placeholder="Enter your password"
+                  placeholder="Enter your Password"
                   required
                 />
               </td>
@@ -90,6 +96,8 @@ const RegistrationPage = () => {
           Have an account? <a href="/loginpage">Login here</a>
         </p>
       </form>
+      </div>
+      </div>
     </>
   );
 };
