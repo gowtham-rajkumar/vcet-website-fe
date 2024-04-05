@@ -55,8 +55,9 @@ const MpmcLab = () => {
   return (
     <>
     <div className="labTop-container">
-      <h2>
-        Microprocessor and Microcontroller Laboratory  </h2>
+    <div className="dep-heading">
+        <h1>Microprocessor and Microcontroller Laboratory</h1>
+      </div>
         <p>
           The Microprocessor and Microcontroller Laboratory provides students
           with hands-on experience in understanding the architecture,
