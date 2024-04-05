@@ -9,14 +9,14 @@ import EceDepartment from "./components/EceDepartment";
 import OtherDepartment from "./components/OtherDepartments";
 import LoginPage from "./components/LoginPage";
 import RegistrationPage from "./components/RegistrationPage";
-// import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import MpmcLab from "./components/MpmcLab";
+import OtherLab from "./components/OtherLab";
 
 function App() {
   return (
     <>
       <Router>
-       {/* <ToastContainer></ToastContainer> */}
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,6 +28,9 @@ function App() {
           <Route path="/otherdepartment" element={<OtherDepartment />} />
           <Route path="/registrationpage" element={<RegistrationPage />}/>
           <Route path ="/ecedepartment" element={<EceDepartment />} />
+          <Route path="/mpmclab" element={<MpmcLab />} />
+          <Route path="/otherlab" element={<OtherLab/>} />
+
             
 
         </Routes>

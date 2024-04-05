@@ -43,7 +43,7 @@ export const ugCourseData = [
     dept: "BME",
     description:
       "Innovating health solutions for tomorrow's medical advancements.",
-    learnmore : "/otherdepartment"
+    learnmore: "/otherdepartment",
   },
 
   {
@@ -53,7 +53,7 @@ export const ugCourseData = [
     dept: "Civil",
     description:
       "Building the world with precision and sustainability in mind.",
-    learnmore : "/otherdepartment"
+    learnmore: "/otherdepartment",
   },
 
   {
@@ -63,7 +63,7 @@ export const ugCourseData = [
     dept: "CSE",
     description:
       "Transforming ideas into cutting-edge technology for a digital future.",
-    learnmore : "/otherDepartment"
+    learnmore: "/otherDepartment",
   },
 
   {
@@ -73,7 +73,7 @@ export const ugCourseData = [
     dept: "EEE",
     description:
       "Powering technological innovations shaping our electrifying world.",
-    learnmore : "/otherDepartment"
+    learnmore: "/otherDepartment",
   },
 
   {
@@ -83,7 +83,7 @@ export const ugCourseData = [
     dept: "ECE",
     description:
       "Empowering global connectivity through integrated electronic systems.",
-    learnmore : "/loginPage"
+    learnmore: "/loginPage",
   },
 
   {
@@ -93,7 +93,7 @@ export const ugCourseData = [
     dept: "Mech",
     description:
       "Engineering excellence driving industries forward with innovative solutions.",
-    learnmore : "/otherdepartment"
+    learnmore: "/otherdepartment",
   },
 
   {
@@ -102,7 +102,7 @@ export const ugCourseData = [
     program: "B.E",
     dept: "MDE",
     description: "Pioneering medical technology for healthier tomorrows.",
-    learnmore : "/otherdepartment"
+    learnmore: "/otherdepartment",
   },
 
   {
@@ -112,7 +112,7 @@ export const ugCourseData = [
     dept: "AIDS",
     description:
       "Unleashing the potential of data with AI for transformative insights.",
-    learnmore : "/otherdepartment"
+    learnmore: "/otherdepartment",
   },
 
   {
@@ -122,7 +122,7 @@ export const ugCourseData = [
     dept: "AIML",
     description:
       "Harnessing AI to create intelligent systems for a smarter world.",
-    learnmore : "/otherdepartment"
+    learnmore: "/otherdepartment",
   },
 
   {
@@ -132,51 +132,47 @@ export const ugCourseData = [
     dept: "IT",
     description:
       "Empowering the digital era with cutting-edge IT solutions and innovations.",
-    learnmore : "/otherdepartment"
-    },
+    learnmore: "/otherdepartment",
+  },
 ];
 
 export const pgCourseData = [
   {
     id: 1,
-    img:require("./Images/me-cse.jpg"),
+    img: require("./Images/me-cse.jpg"),
     program: "M.E",
     dept: "CSE",
-    learnmore : "/otherdepartment",
-    description:
-    "Pioneering algorithms for secure data in digital landscapes.",
-    },
-    
-    {
+    learnmore: "/otherdepartment",
+    description: "Pioneering algorithms for secure data in digital landscapes.",
+  },
+
+  {
     id: 2,
-    img:require("./Images/ae.jpg"),
+    img: require("./Images/ae.jpg"),
     program: "M.E",
     dept: "AE",
-    learnmore : "/otherdepartment",
+    learnmore: "/otherdepartment",
     description:
-    "Crafting structures for resilience in a changing environment.",
-    },
-    
-    {
+      "Crafting structures for resilience in a changing environment.",
+  },
+
+  {
     id: 3,
     img: require("./Images/me-bme.jpg"),
     program: "M.E",
     dept: "BME",
-    learnmore : "/otherdepartment",
-    description:
-    "Fusing biology and technology for life-changing innovations.",
-    },
-    
-    {
+    learnmore: "/otherdepartment",
+    description: "Fusing biology and technology for life-changing innovations.",
+  },
+
+  {
     id: 4,
-    img:require("./Images/mba.webp"),
+    img: require("./Images/mba.webp"),
     program: "M.B.A",
     dept: "MBA",
-    learnmore : "/otherdepartment",
-    description:
-    "Strategizing business growth in dynamic market ecosystems.",
-    },
- 
+    learnmore: "/otherdepartment",
+    description: "Strategizing business growth in dynamic market ecosystems.",
+  },
 ];
 
 // ........................@GowthamRajkumar (Mou.js Data )..........................
@@ -334,6 +330,7 @@ export const labListData = [
     title: "Microprocessor and Microcontroller Laboratory",
     description:
       "Delve into the world of microprocessors and microcontrollers in our state-of-the-art laboratory. Explore hands-on experiments and projects to understand the intricacies of these fundamental components in modern electronics.",
+    path: "/mpmclab",
   },
   {
     id: 2,
@@ -342,6 +339,7 @@ export const labListData = [
     title: "Signal Processing and VLSI Design Laboratory",
     description:
       "Step into the realm of signal processing and VLSI design in our cutting-edge laboratory. Dive deep into algorithm development and design methodologies to create innovative solutions for digital signal processing and VLSI circuit design challenges.",
+    path: "/otherlab",
   },
   {
     id: 3,
@@ -350,6 +348,7 @@ export const labListData = [
     title: "Devices and Electronics Laboratory",
     description:
       "Experience the intersection of engineering and healthcare in our Devices and Electronics Laboratory. From designing medical devices to developing advanced electronic systems, explore how electronics revolutionize healthcare diagnosis and treatment.",
+    path: "/otherlab",
   },
   {
     id: 4,
@@ -358,6 +357,7 @@ export const labListData = [
     title: "IC and Communication Laboratory",
     description:
       "Embark on a journey into the realm of integrated circuits (IC) and communication systems in our laboratory. Discover the principles of IC design and communication protocols as you engage in hands-on projects to build and analyze communication networks.",
+    path: "/otherlab",
   },
   {
     id: 5,
@@ -366,6 +366,7 @@ export const labListData = [
     title: "Network and Simulation Laboratory",
     description:
       "Enter the dynamic world of network systems and simulations in our cutting-edge laboratory. Explore software development, computer systems design, and network architecture to drive innovation and technology advancement.",
+    path: "/otherlab",
   },
   {
     id: 6,
@@ -374,6 +375,7 @@ export const labListData = [
     title: "Microwave and Optical Communication Laboratory",
     description:
       "Immerse yourself in the fascinating domain of microwave and optical communication in our advanced laboratory. From designing communication systems to managing data transmission, explore the principles and technologies shaping modern communication networks.",
+    path: "/otherlab",
   },
 ];
 //Responsive Data for " Slider (StudentFeedback.js) "
