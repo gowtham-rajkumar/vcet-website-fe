@@ -37,7 +37,7 @@ function CourseList() {
 
               <h2>{item.title}</h2>
               <p>{item.description}</p>
-              <a href="https://www.djangoproject.com/">Dig Deeper</a>
+              <a href={item.path}>Dig Deeper</a>
               <i class="fa fa-angle-right"></i>
             </div>
           </div>

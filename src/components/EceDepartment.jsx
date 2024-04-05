@@ -19,7 +19,7 @@ const Practice = () => {
   const handleLogout = async () => {
     try {
       await auth.signOut();
-      navigate("/");
+      navigate("/loginpage");
     } catch (error) {
       console.log(error);
     }

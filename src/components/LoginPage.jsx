@@ -31,7 +31,7 @@ const LoginPage = () => {
           toast.warn("Invalid Email", { theme: "colored" });
           break;
         case "auth/user-disabled":
-          toast.info("User account has been disabled.", { theme: "colored" });
+          toast.info("Your account has been disabled.", { theme: "colored" });
           break;
         case "auth/user-not-found":
           toast.warn("User not found.", { theme: "colored" });
