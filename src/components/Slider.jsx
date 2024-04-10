@@ -47,7 +47,7 @@ const LatestCourseSlider = ({
                         <h1>{heading}</h1>
                         <p>{description}</p>
                     </div>
-                    <div className='sliderContainer'>
+                    <div className='sliderContainer1'>
                         <div
                             className="sliderBox"
                             id={isDragging ? 'sliderDragging' : ''}
