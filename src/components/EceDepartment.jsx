@@ -6,7 +6,6 @@ import background from "../Images/electronic.jpg";
 import Footer from "./Footer.jsx";
 import { auth } from "../Firebase.js";
 import { useNavigate } from "react-router-dom";
-import { MdLogout } from "react-icons/md";
 import {
   facultyData,
   facultyHeadingBox,
@@ -40,7 +39,7 @@ const Practice = () => {
         <h1>THE DEPARTMENT OF ELECTRONICS AND COMMUNICATION</h1>
       </div>
       <div className="logout-container">
-        <button onClick={handleLogout}> <MdLogout className="log-svg"/>Logout</button>
+        <button onClick={handleLogout}>Logout</button>
       </div>
       <LabList />
       <Slider

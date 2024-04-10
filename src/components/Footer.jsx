@@ -15,10 +15,31 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
-  const handleSubmit = (event) => {
+ const API_URL ='http://127.0.0.1:8000/save-email/'
+  const handleSubmit =async (event) => {
     event.preventDefault();
     setEmail("");
-    toast.success("Your Mail Registered Successfully", { theme: "dark" });
+    try{
+      const response = await fetch(API_URL,{
+        method:'POST',
+        headers:{
+          'content-type' : 'application/json',
+        },
+        body:JSON.stringify({email}                                                   )
+      })
+      if (response.ok) {
+        console.log('Email saved successfully!');
+        toast.success("Your Email Registered Successfully", { theme:"colored" });
+      } 
+      else {
+        if (response.statusText === 'Bad Request') {
+          toast.error("We Already Have This Email or Invalid credentials", { theme:"colored" })
+        }
+        }
+      }catch(e){
+        toast.error(e.message,{theme:"colored"})
+    }
+   
   };
   const year = new Date();
   return (

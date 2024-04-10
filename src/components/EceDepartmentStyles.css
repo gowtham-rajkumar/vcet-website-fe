@@ -67,6 +67,7 @@
 .logout-container {
   position: absolute;
   right: 1%;
+  /* top:2%; */
 }
 .logout-container > button {
   padding: 5px 10px;
@@ -122,3 +123,8 @@
   border-radius: 10px;
 }
 
+/* @media screen and (max-width:769px) {
+  .logout-container > button {
+    padding:5px 20px;
+  }
+} */
