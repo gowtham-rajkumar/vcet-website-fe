@@ -1,5 +1,6 @@
 import './HomeTopStyles.css';
 import TeacherImg from '../Images/header_bottom_photo.png'
+import { NavLink } from 'react-router-dom';
 const HomeTop = () =>{
     return(
     <section className='Total-div'>

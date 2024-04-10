@@ -1,5 +1,6 @@
 import "./ContactComStyles.css";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { BsPrinter } from "react-icons/bs";
@@ -9,7 +10,12 @@ import { NavLink } from "react-router-dom";
 const Contact = () => {
   function handlesubmit(event) {
     event.preventDefault();
-  }
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+  
   return (
     <>
       {/* <Navbar /> */}

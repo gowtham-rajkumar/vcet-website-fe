@@ -1,5 +1,6 @@
 import React from "react";
 import "./FooterStyles.css";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -12,6 +13,7 @@ import { FiPrinter } from "react-icons/fi";
 import { IoIosMail } from "react-icons/io";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -206,26 +208,31 @@ const Footer = () => {
         </div>
         <div className="footer-nav">
           <ul>
-            <li>
-              {" "}
-              <a href="#">HOME |</a>
-            </li>
-            <li>
-              {" "}
-              <a href="#">ABOUT |</a>
-            </li>
-            <li>
-              {" "}
-              <a href="#">COURSES |</a>
-            </li>
-            <li>
-              {" "}
-              <a href="#">EVENTS |</a>
-            </li>
-            <li>
-              {" "}
-              <a href="#">TERMS & CONDITIONS</a>
-            </li>
+          <li>
+            <NavLink to="/" activeclassname="active">
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" activeclassname="active">
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/courses" activeclassname="active">
+              Courses
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/events" activeclassname="active">
+              Events
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" activeclassname="active">
+              Contact
+            </NavLink>
+          </li>
           </ul>
         </div>
       </div>
