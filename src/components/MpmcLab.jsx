@@ -4,27 +4,29 @@ import { useState,useEffect } from "react";
 import DataTable from 'react-data-table-component'
 const MpmcLab = () => {
   const [data,setData] = useState([])
-  const DATA_URL = "http://localhost:8000/LabData"
+  const DATA_URL = "http://127.0.0.1:8000/lab/store-lab-data/"
   useEffect( () =>{
     const Datafetch = async () =>{
       try{
         const responce = await fetch(DATA_URL)
         const fetchedData = await responce.json()
-        setData(fetchedData)
-        
+        setData(fetchedData.LabData) 
       }
       catch(error){
         console.log(error.message)
       }
-
     }
    Datafetch();
   },[])
-  console.log(data)
+  const handleSearch =(event)=>{
+    const newItems = data.filter((item)=>
+      item.component.toLowerCase().includes(event.target.value.toLowerCase()))
+      setData(newItems)
+  }
   const columns = [
     {
       name: 'S.No',
-      selector: (data) => data.id  
+      selector: data => data.id
     },
     {
       name :'COMPONENT',
@@ -46,12 +48,6 @@ const MpmcLab = () => {
       sortable: true   
     },
   ]
-  const handleSearch =(event)=>{
-    const newItems = data.filter((item)=>
-      item.component.toLowerCase().includes(event.target.value.toLowerCase()))
-      setData(newItems)
-    
-  }
   return (
     <>
     <div className="labTop-container">

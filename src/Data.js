@@ -413,11 +413,11 @@ export const feedbackData = [
   },
   {
     id: 2,
-    image: require("./Images/bgimg-about.png"),
+    image: require("./Images/course six.png"),
     description:
       "In the depths of uncertainty and amidst the challenges that loom large, The Love Boat courageously sets sail once more, promising adventures for all who embark upon its journey",
     studentName: "Gokul |",
-    position: "Business Management",
+    position: "Customer Service Representative",
   },
   {
     id: 3,
@@ -425,7 +425,7 @@ export const feedbackData = [
     description:
       "As obstacles mount and tasks beckon, The Love Boat steadfastly prepares for its next voyage, where anticipation thrives and possibilities abound, ensuring something extraordinary for every soul aboard",
     studentName: "Gowtham |",
-    position: "Business Management",
+    position: "Operations Manager",
   },
 ];
 // Data for "StudentFeedback.js (Heading) "
