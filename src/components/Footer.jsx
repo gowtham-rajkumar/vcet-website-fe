@@ -25,7 +25,7 @@ const Footer = () => {
         headers:{
           'content-type' : 'application/json',
         },
-        body:JSON.stringify({email})
+        body:JSON.stringify({email}                                                   )
       })
       if (response.ok) {
         console.log('Email saved successfully!');
