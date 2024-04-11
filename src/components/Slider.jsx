@@ -5,6 +5,9 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useSwipeable } from "react-swipeable";
 import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import {useEffect} from 'react'
 
 const LatestCourseSlider = ({
   CourseList,
@@ -40,12 +43,14 @@ const LatestCourseSlider = ({
   //         description = {item.description}
   //     />
   //     );
-
+  useEffect(()=>{
+    AOS.init({ duration: 2000 }); 
+},[])
     return (
             <>
             <section className='sliderArea' style={{ backgroundImage: `url(${backgroundImage})` }}>
                 <div className='sliderContainer'>
-                    <div className='sliderTitleBox'>
+                    <div className='sliderTitleBox' data-aos ="zoom-in">
                         <h1>{heading}</h1>
                         <p>{description}</p>
                     </div>

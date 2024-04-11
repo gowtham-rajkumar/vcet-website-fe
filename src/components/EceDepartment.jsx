@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./EceDepartmentStyles.css";
 import FacultyInformations from "./FacultyInformations.jsx";
 import Slider from "../components/Slider";
@@ -33,6 +33,9 @@ const Practice = () => {
       description={item.description}
     />
   ));
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   return (
     <>
       <div className="dep-heading">
