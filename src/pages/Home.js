@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import HomeTop from "../components/HomeTop";
 import Slider from "../components/Slider";
 import {
@@ -24,6 +24,9 @@ import { feedbackResponsive, responsive, mouResponsive } from "../Data";
 import Whychoose from "../components/Whychoose";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
   //UG_Course_List
   const ugCourseList = ugCourseData.map((item) => (
     <Course

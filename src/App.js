@@ -30,9 +30,6 @@ function App() {
           <Route path ="/ecedepartment" element={<EceDepartment />} />
           <Route path="/mpmclab" element={<MpmcLab />} />
           <Route path="/otherlab" element={<OtherLab/>} />
-
-            
-
         </Routes>
       </Router>
     </>

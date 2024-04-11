@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Course from "../components/Course";
 import Slider from "../components/Slider";
 import Footer from "../components/Footer.jsx";
@@ -12,6 +12,10 @@ import {
   removeArrow1,
 } from "../Data.js";
 const Courses = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
+
   const ugCourseList = ugCourseData.map((item) => (
     <Course
       img={item.img}

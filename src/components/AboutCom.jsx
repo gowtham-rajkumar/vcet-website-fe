@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import "./AboutComStyle.css";
 
@@ -19,6 +19,7 @@ import { feedbackResponsive } from "../Data.js";
 import Slider from "./Slider";
 import { feedbackData } from "../Data.js";
 import StudentFeedback from "./StudentFeedack";
+import { NavLink } from "react-router-dom";
 
 const About = () => {
   const feedbackList = feedbackData.map((item) => (
@@ -30,6 +31,9 @@ const About = () => {
       key={item.id}
     />
   ));
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
   return (
     <div>
       <div className="aboutImage">
@@ -42,7 +46,9 @@ const About = () => {
         <div className="contact-element">
           <ul>
             <li>
-              <a href="#">Home</a>
+            <NavLink to="/" activeclassname="active">
+                  Home
+                </NavLink>
             </li>
             <li>
               <i className="fa fa-greater-than"></i>
