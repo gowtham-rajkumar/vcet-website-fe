@@ -20,6 +20,8 @@ import Slider from "./Slider";
 import { feedbackData } from "../Data.js";
 import StudentFeedback from "./StudentFeedack";
 import { NavLink } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
   const feedbackList = feedbackData.map((item) => (
@@ -33,6 +35,7 @@ const About = () => {
   ));
   useEffect(() => {
     window.scrollTo(0, 0); 
+    AOS.init({ duration: 2000 }); 
   }, []);
   return (
     <div>
@@ -60,8 +63,8 @@ const About = () => {
 
       <div className="container">
         <div className="university-container">
-          <div className="welcome-uni">
-            <div className="uni-text">
+          <div className="welcome-uni" data-aos ="fade-up">
+            <div className="uni-text" data-aos ="fade-up">
               <h1>Welcome To Our University</h1>
               <p>
                 when the odds are against him and their dangers work to do. You

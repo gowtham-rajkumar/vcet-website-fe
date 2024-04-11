@@ -1,11 +1,17 @@
 import './HomeTopStyles.css';
+import {useEffect} from 'react'
 import TeacherImg from '../Images/header_bottom_photo.png'
-import { NavLink } from 'react-router-dom';
+import AOS from "aos";
+import "aos/dist/aos.css";
+// import { NavLink } from 'react-router-dom';
 const HomeTop = () =>{
+    useEffect(()=>{
+        AOS.init({ duration: 2000 }); 
+    },[])
     return(
     <section className='Total-div'>
         <div className="HomeTop">
-            <div className='left-rigtht'>
+            <div className='left-rigtht' data-aos ="fade-up">
             <div className="left-container">
             <h2 className='heading'>Education is the key to your success</h2>
             <p>Education is not merely a path to success; it is the key that unlocks doors to endless possibilities, empowering individuals to thrive, innovate, and shape a brighter future for themselves and society as a whole.</p>

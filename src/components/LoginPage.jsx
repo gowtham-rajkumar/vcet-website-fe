@@ -22,7 +22,6 @@ const LoginPage = () => {
 
     try {
       await auth.signInWithEmailAndPassword(username, password);
-      console.log(username, password);
       navigate("/ecedepartment");
     } catch (error) {
       var code = error.code;
@@ -82,7 +81,7 @@ const LoginPage = () => {
                     name="username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    placeholder="Enter Your Username"
+                    placeholder="Enter Your Email ID"
                     required
                   />
                   <input
