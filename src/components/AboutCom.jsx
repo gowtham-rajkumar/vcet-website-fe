@@ -79,7 +79,7 @@ const About = () => {
             <div className="degree-content">
               <div class="deg">
                 <img src={masterimg} alt="" class="img" />
-                <div class="text">
+                <div class="text" data-aos ="fade-left">
                   <h4>ASSOCIATE’S DEGREE</h4>
                   <p>
                     You would see the biggest gift would be from me and the card
@@ -90,7 +90,7 @@ const About = () => {
 
               <div class="deg">
                 <img src={bachelorimg} alt="" class="img" />
-                <div class="text">
+                <div class="text" data-aos ="fade-left">
                   <h4>BACHELOR’S DEGREE</h4>
                   <p>
                     On your mark get set and go now. Got a dream and we just
@@ -101,7 +101,7 @@ const About = () => {
 
               <div class="deg">
                 <img src={associateimg} alt="" class="img" />
-                <div class="text">
+                <div class="text" data-aos ="fade-left">
                   <h4>MASTER’S DEGREE</h4>
                   <p>
                     Just sit right back and you'll hear a tale a tale of a
@@ -122,17 +122,17 @@ const About = () => {
         </div>
 
         <div className="principle-image">
-          <div className="profit">
+          <div className="profit" data-aos ="zoom-in">
             <img src={profit} alt="" />
             <h3>Not For Profit</h3>
           </div>
 
-          <div className="profit">
+          <div className="profit" data-aos ="zoom-in">
             <img src={structure} alt="" />
             <h3>Course Structure</h3>
           </div>
 
-          <div className="profit">
+          <div className="profit" data-aos ="zoom-in">
             <img src={test} alt="" />
             <h3>Test Preparation</h3>
           </div>

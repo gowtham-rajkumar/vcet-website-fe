@@ -14,10 +14,10 @@ const Whychoose = () => {
     },[])
   return (
     <div className='whyChoose'>
-        <div className='whyImage' data-aos ="fade-right">
+        <div className='whyImage'>
             <img src={why} alt='chooose img'/>
         </div>
-        <div className='whyContent' data-aos ="fade-left">
+        <div className='whyContent'>
             <h1>Why Choose Us ?</h1>
             <p>
             we stand out as a beacon of academic excellence, innovation, and holistic development. With state-of-the-art facilities and industry-relevant curriculum, we provide students with hands-on learning opportunities and a supportive environment to thrive. Our commitment to nurturing talent is evident in our alumni's success stories, showcasing the transformative impact of a velalr college of engineering and technology education.

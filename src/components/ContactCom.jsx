@@ -5,8 +5,9 @@ import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import { BsPrinter } from "react-icons/bs";
 import { IoMailOutline } from "react-icons/io5";
-// import { FaGreaterThan } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Contact = () => {
   function handlesubmit(event) {
     event.preventDefault();
@@ -14,6 +15,7 @@ const Contact = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0); 
+    AOS.init({duration:2000})
   }, []);
   
   return (
@@ -56,12 +58,12 @@ const Contact = () => {
             ></iframe>
           </div>
         </div>
-        <div className="add-container">
+        <div className="add-container" >
           <div className="inner-container">
             <div className="add-heading">How To Reach Us</div>
 
             <div className="inner-add">
-              <div className="div-one">
+              <div className="div-one" data-aos ="fade-up">
                 <ul>
                   <li className="map-loc-icon">
                     <IoLocationOutline /> Maruthi Nagar
@@ -72,7 +74,7 @@ const Contact = () => {
                 </ul>
               </div>
 
-              <div>
+              <div data-aos ="fade-down">
                 <ul>
                   <li className="small-div">
                     <BsTelephone /> 0424-2244201 /02
@@ -83,7 +85,7 @@ const Contact = () => {
                 </ul>
               </div>
 
-              <div>
+              <div data-aos ="fade-up">
                 <ul>
                   <li className="small-div">
                     <IoMailOutline />

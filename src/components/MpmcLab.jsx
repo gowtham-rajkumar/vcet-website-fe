@@ -1,7 +1,8 @@
 import React from "react";
 import "./EceDepartmentStyles.css";
 import { useState,useEffect } from "react";
-import DataTable from 'react-data-table-component'
+import DataTable from 'react-data-table-component';
+import Footer from './Footer'
 const MpmcLab = () => {
   const [data, setData] = useState([]);
   const [originalData, setOriginalData] = useState([]); // Store the original data
@@ -93,6 +94,7 @@ const MpmcLab = () => {
           responsive
         />
       </div>
+      <Footer />
     </>
   );
 };

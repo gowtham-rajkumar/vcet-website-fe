@@ -66,6 +66,7 @@ i {
 .welcome-uni h1{
   color: black;
   margin-bottom: 20px;
+  line-height: 30px;
 }
 
 .uni-text{
