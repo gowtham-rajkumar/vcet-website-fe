@@ -17,10 +17,10 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
- const API_URL ='http://127.0.0.1:8000/save-email/'
+ const API_URL ='http://127.0.0.1:8000/user/save-email/'
   const handleSubmit =async (event) => {
     event.preventDefault();
-    setEmail("");
+    
     try{
       const response = await fetch(API_URL,{
         method:'POST',
@@ -32,6 +32,7 @@ const Footer = () => {
       if (response.ok) {
         console.log('Email saved successfully!');
         toast.success("Your Email Registered Successfully", { theme:"colored" });
+        setEmail("");
       } 
       else {
         if (response.statusText === 'Bad Request') {
