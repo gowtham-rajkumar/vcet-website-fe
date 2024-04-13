@@ -22,10 +22,13 @@ import Footer from "../components/Footer";
 import Mou from "../components/Mou";
 import { feedbackResponsive, responsive, mouResponsive } from "../Data";
 import Whychoose from "../components/Whychoose";
+import AOS from "aos";
 
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0); 
+    AOS.init({duration :2000})
+
   }, []);
   //UG_Course_List
   const ugCourseList = ugCourseData.map((item) => (
