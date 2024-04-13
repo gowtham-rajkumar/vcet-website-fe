@@ -9,9 +9,9 @@ import { NavLink } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Contact = () => {
-  function handlesubmit(event) {
-    event.preventDefault();
-  };
+  // function handlesubmit(event) {
+  //   event.preventDefault();
+  // };
 
   useEffect(() => {
     window.scrollTo(0, 0); 
@@ -109,8 +109,7 @@ const Contact = () => {
           <div className="right-containerr">
             <div className="form-container">
               <form
-                action="contact.html"
-                onSubmit={(event) => handlesubmit(event)}
+                // onSubmit={(event) => handlesubmit(event)}
               >
                 <div className="row">
                   <h2>Send Us An Email</h2>
