@@ -72,6 +72,12 @@ i {
 .uni-text{
   margin-left: 10%;
   width: 80%;
+  line-height: 27px;
+}
+
+.uni-text p{
+  font-size: 22px;
+  text-align: justify;
 }
 
 .degree{

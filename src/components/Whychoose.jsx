@@ -20,7 +20,7 @@ const Whychoose = () => {
         <div className='whyContent'>
             <h1>Why Choose Us ?</h1>
             <p>
-            we stand out as a beacon of academic excellence, innovation, and holistic development. With state-of-the-art facilities and industry-relevant curriculum, we provide students with hands-on learning opportunities and a supportive environment to thrive. Our commitment to nurturing talent is evident in our alumni's success stories, showcasing the transformative impact of a velalr college of engineering and technology education.
+            we stand out as a beacon of academic excellence, innovation, and holistic development. With state-of-the-art facilities and industry-relevant curriculum, we provide students with hands-on learning opportunities and a supportive environment to thrive. Our commitment to nurturing talent is evident in our alumni's success stories, showcasing the transformative impact of a velalar college of engineering and technology education.
 </p>
             
             <div className='whylogo'>
