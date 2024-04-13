@@ -413,7 +413,7 @@ export const feedbackData = [
   },
   {
     id: 2,
-    image: require("./Images/course six.png"),
+    image: require("./Images/dhana.jpg"),
     description:
       "In the depths of uncertainty and amidst the challenges that loom large, The Love Boat courageously sets sail once more, promising adventures for all who embark upon its journey",
     studentName: "Gokul |",
