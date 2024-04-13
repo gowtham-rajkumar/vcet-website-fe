@@ -67,10 +67,7 @@ const About = () => {
             <div className="uni-text" data-aos ="fade-up">
               <h1>Welcome To Our University</h1>
               <p>
-                when the odds are against him and their dangers work to do. You
-                bet your life Speed Racer he will see it through. Well we're
-                movin' on up to the east side. To a deluxe apartment in the sky.
-                So this is the tale of our castaways
+              Congratulations on joining our university family! As you embark on this journey, remember that your time here is not just about acquiring knowledge, but about discovering your passions and shaping your future
               </p>
             </div>
           </div>
@@ -101,9 +98,9 @@ const About = () => {
 
               <div class="deg">
                 <img src={associateimg} alt="" class="img" />
-                <div class="text" data-aos ="fade-left">
-                  <h4>MASTER’S DEGREE</h4>
-                  <p>
+                <div className="text" data-aos ="fade-left">
+                  <h4 className="mar-text">MASTER’S DEGREE</h4>
+                  <p className="mar-text">
                     Just sit right back and you'll hear a tale a tale of a
                     fateful trip that started from this tropic port aboard this
                     tiny ship.
@@ -149,7 +146,9 @@ const About = () => {
             </p>
           </div>
           <div className="applybtn">
-            <a href="#">APPLY NOW</a>
+            <NavLink to="/RegistrationPage" activeclassname="active">
+              Apply Now
+            </NavLink>
           </div>
         </div>
       </div>

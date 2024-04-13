@@ -58,7 +58,7 @@ i {
 
 .welcome-uni{
   width: 50%;
-  padding-top: 200px;
+  padding-top: 180px;
   line-height: 25px;
   color: grey;
 }
@@ -100,6 +100,10 @@ i {
 
 .deg .img {
   margin-right: 20px; 
+}
+
+.mar-text{
+  margin-left: 10px;
 }
 
 .deg .text {
